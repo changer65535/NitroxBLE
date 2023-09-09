@@ -7,6 +7,8 @@ The Arduino code is contained in the ITSY directory.
 The Garmin code is contained in the GARMIN directory.
 
 As best as I can tell, there isn't a GATT for oxygen sensor.  So I created the following:
+
+
 Nitrox Service                     = BLEService("f63f71e0-7b8e-4bbb-ab5c-8dd8e4ceb7d3");
 pO2 Characteristic                 = BLECharacteristic("fb07ef0a-228f-456c-9218-17770d6c07bd"); (notify)
 calibrationCharacteristic = BLECharacteristic("d008ec36-1853-48ba-8bd8-68c3e861df14");          (write / notify)
