@@ -1,0 +1,338 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 7; ]
+import Toybox.Graphics;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 11; ]
+class DeviceView extends WatchUi.View{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 12; @position = 16; ]
+    private
+    var _dataModel as DeviceDataModel;
+    //! Constructor
+    //! @param dataModel The data to show
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 16; ]
+    public
+    function initialize(dataModel as DeviceDataModel) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_16_61_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 17 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 19 8 ]
+        %tmp.5 = lgetv %dataModel;
+        putv self :_dataModel %tmp.5;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_16_61_stop:
+    }
+    //! Update the view
+    //! @param dc Device Context
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 24; ]
+    public
+    function onUpdate(dc as Dc) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_24_47_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 25 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_24_47_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_24_47_stop" ]
+        %statusString.1 = local;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 26 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_26_8_if_stmt:
+        %tmp.2 = getv ? :_dataModel;
+        %tmp.3 = getv function %tmp.2 :isConnected;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        bf %tmp.4 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_26_8_if_false;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_26_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_27_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 28 12 ]
+        %tmp.5 = "Connected";
+        lputv %statusString.1 %tmp.5;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_27_8_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_26_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_26_8_if_false:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_30_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 31 12 ]
+        %tmp.6 = "Disconnected";
+        lputv %statusString.1 %tmp.6;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_30_8_stop:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_26_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 35 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :setColor;
+        %tmp.9 = getm $.Toybox.Graphics;
+        %tmp.10 = getv %tmp.9 :COLOR_BLACK;
+        %tmp.11 = getm $.Toybox.Graphics;
+        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 36 8 ]
+        %tmp.13 = lgetv %dc;
+        %tmp.14 = getv function %tmp.13 :clear;
+        invoke %tmp.13 %tmp.14();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 37 8 ]
+        %tmp.15 = lgetv %dc;
+        %tmp.16 = getv function %tmp.15 :drawText;
+        %tmp.17 = lgetv %dc;
+        %tmp.18 = getv function %tmp.17 :getWidth;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        %tmp.22 = 15;
+        %tmp.23 = getm $.Toybox.Graphics;
+        %tmp.24 = getv %tmp.23 :FONT_SMALL;
+        %tmp.26 = lgetv %statusString.1;
+        %tmp.27 = getm $.Toybox.Graphics;
+        %tmp.28 = getv %tmp.27 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.15 %tmp.16(%tmp.21, %tmp.22, %tmp.24, %tmp.26, %tmp.28);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 39 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_24_47_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_24_47_stop" ]
+        %profile.2 = local;
+        %tmp.30 = getv ? :_dataModel;
+        %tmp.31 = getv function %tmp.30 :getActiveProfile;
+        %tmp.32 = invoke %tmp.30 %tmp.31();
+        lputv %profile.2 %tmp.32;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 40 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_8_if_stmt:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_12_begin:
+        %tmp.34 = getv ? :_dataModel;
+        %tmp.35 = getv function %tmp.34 :isConnected;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = dup %tmp.36;
+        bf %tmp.37 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_40_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_40_true:
+        %tmp.39 = lgetv %profile.2;
+        %tmp.40 = null;
+        %tmp.41 = ne %tmp.39 %tmp.40;
+        %tmp.42 = and %tmp.36 %tmp.41;
+        push %tmp.42;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_40_end:
+        %tmp.43 = phi [%tmp.37 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_12_begin] [%tmp.42 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_40_true] [%tmp.43 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_40_end];
+        bf %tmp.43 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_41_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 42 12 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_42_12_if_stmt:
+        %tmp.44 = lgetv %profile.2;
+        %tmp.45 = as %tmp.44 { (!Null) };
+        %tmp.46 = getv %tmp.45 :calibrating;
+        bf %tmp.46 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_42_12_if_false;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_42_12_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_43_12_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 44 16 ]
+        %tmp.47 = lgetv %dc;
+        %tmp.48 = getv function %tmp.47 :setColor;
+        %tmp.49 = getm $.Toybox.Graphics;
+        %tmp.50 = getv %tmp.49 :COLOR_BLACK;
+        %tmp.51 = getm $.Toybox.Graphics;
+        %tmp.52 = getv %tmp.51 :COLOR_WHITE;
+        invoke %tmp.47 %tmp.48(%tmp.50, %tmp.52);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 45 16 ]
+        %tmp.53 = lgetv %dc;
+        %tmp.54 = getv function %tmp.53 :clear;
+        invoke %tmp.53 %tmp.54();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 46 16 ]
+        %tmp.55 = lgetv %dc;
+        %tmp.56 = getv function %tmp.55 :drawText;
+        %tmp.57 = lgetv %dc;
+        %tmp.58 = getv function %tmp.57 :getWidth;
+        %tmp.59 = invoke %tmp.57 %tmp.58();
+        %tmp.60 = 2;
+        %tmp.61 = div %tmp.59 %tmp.60;
+        %tmp.62 = lgetv %dc;
+        %tmp.63 = getv function %tmp.62 :getHeight;
+        %tmp.64 = invoke %tmp.62 %tmp.63();
+        %tmp.65 = 2;
+        %tmp.66 = div %tmp.64 %tmp.65;
+        %tmp.67 = getm $.Toybox.Graphics;
+        %tmp.68 = getv %tmp.67 :FONT_SMALL;
+        %tmp.69 = "Calibrating";
+        %tmp.70 = getm $.Toybox.Graphics;
+        %tmp.71 = getv %tmp.70 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.55 %tmp.56(%tmp.61, %tmp.66, %tmp.68, %tmp.69, %tmp.71);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_43_12_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_42_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_42_12_if_false:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_49_12_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 51 16 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_49_12_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_49_12_stop" ]
+        %pO2.3 = local;
+        %tmp.72 = lgetv %profile.2;
+        %tmp.73 = as %tmp.72 { (!Null) };
+        %tmp.74 = getv function %tmp.73 :getPO2;
+        %tmp.75 = invoke %tmp.73 %tmp.74();
+        lputv %pO2.3 %tmp.75;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 52 16 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_16_if_stmt:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_20_begin:
+        %tmp.77 = lgetv %pO2.3;
+        %tmp.78 = null;
+        %tmp.79 = ne %tmp.77 %tmp.78;
+        %tmp.80 = dup %tmp.79;
+        bf %tmp.80 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_37_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_37_true:
+        %tmp.82 = lgetv %pO2.3;
+        %tmp.83 = as %tmp.82 { (!Null) };
+        %tmp.84 = 0;
+        %tmp.85 = gt %tmp.83 %tmp.84;
+        %tmp.86 = and %tmp.79 %tmp.85;
+        push %tmp.86;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_37_end:
+        %tmp.87 = phi [%tmp.80 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_20_begin] [%tmp.86 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_37_true] [%tmp.87 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_37_end];
+        bf %tmp.87 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_16_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_16_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 54 20 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_stop" ]
+        %midX.4 = local;
+        %tmp.88 = lgetv %dc;
+        %tmp.89 = getv function %tmp.88 :getWidth;
+        %tmp.90 = invoke %tmp.88 %tmp.89();
+        %tmp.91 = 2;
+        %tmp.92 = div %tmp.90 %tmp.91;
+        lputv %midX.4 %tmp.92;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 55 20 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_stop" ]
+        %midY.5 = local;
+        %tmp.93 = lgetv %dc;
+        %tmp.94 = getv function %tmp.93 :getHeight;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        %tmp.96 = 2;
+        %tmp.97 = div %tmp.95 %tmp.96;
+        lputv %midY.5 %tmp.97;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 56 20 ]
+        %tmp.98 = lgetv %dc;
+        %tmp.99 = getv function %tmp.98 :setColor;
+        %tmp.100 = getm $.Toybox.Graphics;
+        %tmp.101 = getv %tmp.100 :COLOR_DK_GREEN;
+        %tmp.102 = getm $.Toybox.Graphics;
+        %tmp.103 = getv %tmp.102 :COLOR_WHITE;
+        invoke %tmp.98 %tmp.99(%tmp.101, %tmp.103);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 57 20 ]
+        %tmp.104 = lgetv %dc;
+        %tmp.105 = getv function %tmp.104 :drawText;
+        %tmp.107 = lgetv %midX.4;
+        %tmp.109 = lgetv %midY.5;
+        %tmp.110 = 30;
+        %tmp.111 = sub %tmp.109 %tmp.110;
+        %tmp.112 = getm $.Toybox.Graphics;
+        %tmp.113 = getv %tmp.112 :FONT_NUMBER_THAI_HOT;
+        %tmp.114 = getm $.Toybox.Lang;
+        %tmp.115 = getv function %tmp.114 :format;
+        %tmp.116 = "$1$";
+        %tmp.117 = newa 1;
+        %tmp.118 = lgetv %pO2.3;
+        %tmp.119 = as %tmp.118 { (!Null) };
+        %tmp.120 = getv function %tmp.119 :format;
+        %tmp.121 = "%.1f";
+        %tmp.122 = invoke %tmp.119 %tmp.120(%tmp.121);
+        %tmp.123 = dup %tmp.117;
+        %tmp.124 = aputv %tmp.123 0 %tmp.122;
+        %tmp.125 = invoke %tmp.114 %tmp.115(%tmp.116, %tmp.124);
+        %tmp.126 = getm $.Toybox.Graphics;
+        %tmp.127 = getv %tmp.126 :TEXT_JUSTIFY_CENTER;
+        %tmp.128 = getm $.Toybox.Graphics;
+        %tmp.129 = getv %tmp.128 :TEXT_JUSTIFY_VCENTER;
+        %tmp.130 = bitor %tmp.127 %tmp.129;
+        invoke %tmp.104 %tmp.105(%tmp.107, %tmp.111, %tmp.113, %tmp.125, %tmp.130);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 59 20 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_stop" ]
+        %modFeet.6 = local;
+        %tmp.131 = 140.0;
+        %tmp.133 = lgetv %pO2.3;
+        %tmp.134 = as %tmp.133 { (!Null) };
+        %tmp.135 = div %tmp.131 %tmp.134;
+        %tmp.136 = 1;
+        %tmp.137 = sub %tmp.135 %tmp.136;
+        %tmp.138 = 33.0;
+        %tmp.139 = mul %tmp.137 %tmp.138;
+        lputv %modFeet.6 %tmp.139;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 60 20 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_stop" ]
+        %modMeters.7 = local;
+        %tmp.141 = lgetv %modFeet.6;
+        %tmp.142 = 0.3048;
+        %tmp.143 = mul %tmp.141 %tmp.142;
+        lputv %modMeters.7 %tmp.143;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 62 20 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_62_20_if_stmt:
+        %tmp.145 = lgetv %modFeet.6;
+        %tmp.146 = null;
+        %tmp.147 = ne %tmp.145 %tmp.146;
+        bf %tmp.147 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_62_20_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_62_20_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_63_20_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 64 24 ]
+        %tmp.148 = lgetv %dc;
+        %tmp.149 = getv function %tmp.148 :setColor;
+        %tmp.150 = getm $.Toybox.Graphics;
+        %tmp.151 = getv %tmp.150 :COLOR_DK_RED;
+        %tmp.152 = getm $.Toybox.Graphics;
+        %tmp.153 = getv %tmp.152 :COLOR_WHITE;
+        invoke %tmp.148 %tmp.149(%tmp.151, %tmp.153);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 65 24 ]
+        %tmp.154 = lgetv %dc;
+        %tmp.155 = getv function %tmp.154 :drawText;
+        %tmp.157 = lgetv %midX.4;
+        %tmp.159 = lgetv %midY.5;
+        %tmp.160 = 30;
+        %tmp.161 = add %tmp.159 %tmp.160;
+        %tmp.162 = getm $.Toybox.Graphics;
+        %tmp.163 = getv %tmp.162 :FONT_MEDIUM;
+        %tmp.164 = getm $.Toybox.Lang;
+        %tmp.165 = getv function %tmp.164 :format;
+        %tmp.166 = "$1$ feet";
+        %tmp.167 = newa 1;
+        %tmp.168 = lgetv %modFeet.6;
+        %tmp.169 = as %tmp.168 { (!Null) };
+        %tmp.170 = getv function %tmp.169 :format;
+        %tmp.171 = "%.1f";
+        %tmp.172 = invoke %tmp.169 %tmp.170(%tmp.171);
+        %tmp.173 = dup %tmp.167;
+        %tmp.174 = aputv %tmp.173 0 %tmp.172;
+        %tmp.175 = invoke %tmp.164 %tmp.165(%tmp.166, %tmp.174);
+        %tmp.176 = getm $.Toybox.Graphics;
+        %tmp.177 = getv %tmp.176 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.154 %tmp.155(%tmp.157, %tmp.161, %tmp.163, %tmp.175, %tmp.177);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" 66 24 ]
+        %tmp.178 = lgetv %dc;
+        %tmp.179 = getv function %tmp.178 :drawText;
+        %tmp.181 = lgetv %midX.4;
+        %tmp.183 = lgetv %midY.5;
+        %tmp.184 = 70;
+        %tmp.185 = add %tmp.183 %tmp.184;
+        %tmp.186 = getm $.Toybox.Graphics;
+        %tmp.187 = getv %tmp.186 :FONT_MEDIUM;
+        %tmp.188 = getm $.Toybox.Lang;
+        %tmp.189 = getv function %tmp.188 :format;
+        %tmp.190 = "$1$ meters";
+        %tmp.191 = newa 1;
+        %tmp.192 = lgetv %modMeters.7;
+        %tmp.193 = getv function %tmp.192 :format;
+        %tmp.194 = "%.1f";
+        %tmp.195 = invoke %tmp.192 %tmp.193(%tmp.194);
+        %tmp.196 = dup %tmp.191;
+        %tmp.197 = aputv %tmp.196 0 %tmp.195;
+        %tmp.198 = invoke %tmp.188 %tmp.189(%tmp.190, %tmp.197);
+        %tmp.199 = getm $.Toybox.Graphics;
+        %tmp.200 = getv %tmp.199 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.178 %tmp.179(%tmp.181, %tmp.185, %tmp.187, %tmp.198, %tmp.200);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_63_20_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_62_20_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_62_20_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_53_16_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_16_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_52_16_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_49_12_stop:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_42_12_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_41_8_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_40_8_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceView_mc_24_47_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc"; @line = 7; ]
+<init> {
+}

@@ -1,0 +1,110 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 7; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 8; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 9; ]
+import WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 11; ]
+class DeviceDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 12; @position = 16; ]
+    private
+    var _deviceDataModel as DeviceDataModel;
+    //! Constructor
+    //! @param deviceDataModel The device data model
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 16; ]
+    public
+    function initialize(deviceDataModel as DeviceDataModel) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_16_67_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 17 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 19 8 ]
+        %tmp.5 = lgetv %deviceDataModel;
+        putv self :_deviceDataModel %tmp.5;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 20 8 ]
+        %tmp.7 = getv ? :_deviceDataModel;
+        %tmp.8 = getv function %tmp.7 :pair;
+        invoke %tmp.7 %tmp.8();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_16_67_stop:
+    }
+    //! Handle the back behavior
+    //! @return true if handled, false otherwise
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 25; ]
+    public
+    function onBack() as Boolean {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_26_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 27 8 ]
+        %tmp.2 = getv ? :_deviceDataModel;
+        %tmp.3 = getv function %tmp.2 :unpair;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 28 8 ]
+        %tmp.4 = getm $.WatchUi;
+        %tmp.5 = getv function %tmp.4 :popView;
+        %tmp.6 = getm $.WatchUi;
+        %tmp.7 = getv %tmp.6 :SLIDE_DOWN;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 29 8 ]
+        %tmp.8 = true;
+        ret %tmp.8;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_26_4_stop:
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 31; ]
+    public
+    function onSelect() as Boolean {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_32_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 34 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "calibrate!";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 35 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_32_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_32_4_stop" ]
+        %profile.1 = local;
+        %tmp.6 = getv ? :_deviceDataModel;
+        %tmp.7 = getv function %tmp.6 :getActiveProfile;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %profile.1 %tmp.8;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 36 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_8_if_stmt:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_12_begin:
+        %tmp.10 = getv ? :_deviceDataModel;
+        %tmp.11 = getv function %tmp.10 :isConnected;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = dup %tmp.12;
+        bf %tmp.13 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_46_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_46_true:
+        %tmp.15 = lgetv %profile.1;
+        %tmp.16 = null;
+        %tmp.17 = ne %tmp.15 %tmp.16;
+        %tmp.18 = and %tmp.12 %tmp.17;
+        push %tmp.18;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_46_end:
+        %tmp.19 = phi [%tmp.13 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_12_begin] [%tmp.18 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_46_true] [%tmp.19 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_46_end];
+        bf %tmp.19 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_37_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 38 12 ]
+        %tmp.20 = lgetv %profile.1;
+        %tmp.21 = as %tmp.20 { (!Null) };
+        %tmp.22 = getv function %tmp.21 :startCalibrating;
+        invoke %tmp.21 %tmp.22();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_37_8_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_36_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" 41 8 ]
+        %tmp.23 = true;
+        ret %tmp.23;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DeviceDelegate_mc_32_4_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc"; @line = 7; ]
+<init> {
+}

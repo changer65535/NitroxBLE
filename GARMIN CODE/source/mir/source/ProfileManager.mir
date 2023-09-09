@@ -1,0 +1,128 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 7; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 9; ]
+class ProfileManager{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 9; ]
+    <init> {
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" 19 17 ]
+        %tmp.1 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.2 = getv function %tmp.1 :stringToUuid;
+        %tmp.3 = "f63f71e0-7b8e-4bbb-ab5c-8dd8e4ceb7d3";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        putv self :NITROX_SERVICE %tmp.4;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" 20 17 ]
+        %tmp.5 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.6 = getv function %tmp.5 :stringToUuid;
+        %tmp.7 = "5f64c5e1-c3bc-4398-b49f-a03028eb20c8";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        putv self :RAWDATA_CHARACTERISTIC %tmp.8;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" 21 17 ]
+        %tmp.9 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.10 = getv function %tmp.9 :stringToUuid;
+        %tmp.11 = "fb07ef0a-228f-456c-9218-17770d6c07bd";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        putv self :PO2_CHARACTERISTIC %tmp.12;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" 22 17 ]
+        %tmp.13 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.14 = getv function %tmp.13 :stringToUuid;
+        %tmp.15 = "d008ec36-1853-48ba-8bd8-68c3e861df14";
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        putv self :CALIBRATE_CHARACTERISTIC %tmp.16;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" 30 18 ]
+        %tmp.17 = newd 2;
+        %tmp.19 = const :uuid;
+        %tmp.21 = getv ? :NITROX_SERVICE;
+        %tmp.22 = dup %tmp.17;
+        %tmp.23 = aputv %tmp.22 %tmp.19 %tmp.21;
+        %tmp.25 = const :characteristics;
+        %tmp.26 = newa 3;
+        %tmp.27 = newd 2;
+        %tmp.29 = const :uuid;
+        %tmp.31 = getv ? :RAWDATA_CHARACTERISTIC;
+        %tmp.32 = dup %tmp.27;
+        %tmp.33 = aputv %tmp.32 %tmp.29 %tmp.31;
+        %tmp.35 = const :descriptors;
+        %tmp.36 = newa 1;
+        %tmp.37 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.38 = getv function %tmp.37 :cccdUuid;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        %tmp.40 = dup %tmp.36;
+        %tmp.41 = aputv %tmp.40 0 %tmp.39;
+        %tmp.42 = dup %tmp.33;
+        %tmp.43 = aputv %tmp.42 %tmp.35 %tmp.41;
+        %tmp.44 = dup %tmp.26;
+        %tmp.45 = aputv %tmp.44 0 %tmp.43;
+        %tmp.46 = newd 2;
+        %tmp.48 = const :uuid;
+        %tmp.50 = getv ? :PO2_CHARACTERISTIC;
+        %tmp.51 = dup %tmp.46;
+        %tmp.52 = aputv %tmp.51 %tmp.48 %tmp.50;
+        %tmp.54 = const :descriptors;
+        %tmp.55 = newa 1;
+        %tmp.56 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.57 = getv function %tmp.56 :cccdUuid;
+        %tmp.58 = invoke %tmp.56 %tmp.57();
+        %tmp.59 = dup %tmp.55;
+        %tmp.60 = aputv %tmp.59 0 %tmp.58;
+        %tmp.61 = dup %tmp.52;
+        %tmp.62 = aputv %tmp.61 %tmp.54 %tmp.60;
+        %tmp.63 = dup %tmp.45;
+        %tmp.64 = aputv %tmp.63 1 %tmp.62;
+        %tmp.65 = newd 2;
+        %tmp.67 = const :uuid;
+        %tmp.69 = getv ? :CALIBRATE_CHARACTERISTIC;
+        %tmp.70 = dup %tmp.65;
+        %tmp.71 = aputv %tmp.70 %tmp.67 %tmp.69;
+        %tmp.73 = const :descriptors;
+        %tmp.74 = newa 1;
+        %tmp.75 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.76 = getv function %tmp.75 :cccdUuid;
+        %tmp.77 = invoke %tmp.75 %tmp.76();
+        %tmp.78 = dup %tmp.74;
+        %tmp.79 = aputv %tmp.78 0 %tmp.77;
+        %tmp.80 = dup %tmp.71;
+        %tmp.81 = aputv %tmp.80 %tmp.73 %tmp.79;
+        %tmp.82 = dup %tmp.64;
+        %tmp.83 = aputv %tmp.82 2 %tmp.81;
+        %tmp.84 = dup %tmp.23;
+        %tmp.85 = aputv %tmp.84 %tmp.25 %tmp.83;
+        putv self :_nitroxProfileDef %tmp.85;
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 9; ]
+    function initialize() as Void {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 19; @position = 17; ]
+    public
+    const NITROX_SERVICE;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 20; @position = 17; ]
+    public
+    const RAWDATA_CHARACTERISTIC;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 21; @position = 17; ]
+    public
+    const PO2_CHARACTERISTIC;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 22; @position = 17; ]
+    public
+    const CALIBRATE_CHARACTERISTIC;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 30; @position = 18; ]
+    private
+    const _nitroxProfileDef;
+    //! Register the bluetooth profile
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 48; ]
+    public
+    function registerProfiles() as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ProfileManager_mc_48_47_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" 49 8 ]
+        %tmp.1 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.2 = getv function %tmp.1 :registerProfile;
+        %tmp.4 = getv ? :_nitroxProfileDef;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ProfileManager_mc_48_47_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc"; @line = 7; ]
+<init> {
+}

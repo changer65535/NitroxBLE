@@ -1,0 +1,75 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 7; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 11; ]
+class MainMenuDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 13; @position = 8; ]
+    var _dataModel as DeviceDataModel or Null;
+    //! Constructor
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 16; ]
+    public
+    function initialize() as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_16_33_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" 17 8 ]
+        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_16_33_stop:
+    }
+    //! Handle a menu item being chosen
+    //! @param item The identifier of the chosen item
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 22; ]
+    public
+    function onMenuItem(item as Symbol) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_23_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" 24 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_24_8_if_stmt:
+        %tmp.2 = lgetv %item;
+        %tmp.4 = const :search;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_24_8_if_false;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_24_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_25_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" 26 12 ]
+        %tmp.6 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.7 = getv function %tmp.6 :setScanState;
+        %tmp.8 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.9 = getv %tmp.8 :SCAN_STATE_SCANNING;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_25_8_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_24_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_24_8_if_false:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" 28 13 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_28_13_if_stmt:
+        %tmp.11 = lgetv %item;
+        %tmp.13 = const :stop;
+        %tmp.14 = eq %tmp.11 %tmp.13;
+        bf %tmp.14 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_28_13_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_28_13_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_29_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" 30 12 ]
+        %tmp.15 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.16 = getv function %tmp.15 :setScanState;
+        %tmp.17 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.18 = getv %tmp.17 :SCAN_STATE_OFF;
+        invoke %tmp.15 %tmp.16(%tmp.18);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_29_8_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_28_13_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_28_13_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_24_8_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_MainMenuDelegate_mc_23_4_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc"; @line = 7; ]
+<init> {
+}

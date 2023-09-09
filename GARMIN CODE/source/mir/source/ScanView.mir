@@ -1,0 +1,170 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 7; ]
+import Toybox.Graphics;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 8; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 10; ]
+class ScanView extends WatchUi.View{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 11; @position = 16; ]
+    private
+    var _scanDataModel as ScanDataModel;
+    //! Constructor
+    //! @param scanDataModel The model containing the scan results
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 15; ]
+    public
+    function initialize(scanDataModel as ScanDataModel) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_15_63_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 16 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 18 8 ]
+        %tmp.5 = lgetv %scanDataModel;
+        putv self :_scanDataModel %tmp.5;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_15_63_stop:
+    }
+    //! Load your resources here
+    //! @param dc Device context
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 23; ]
+    public
+    function onLayout(dc as Dc) as Void {
+    }
+    //! Called when this View is brought to the foreground. Restore
+    //! the state of this View and prepare it to be shown. This includes
+    //! loading resources into memory.
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 30; ]
+    public
+    function onShow() as Void {
+    }
+    //! Update the view
+    //! @param dc Device context
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 36; ]
+    public
+    function onUpdate(dc as Dc) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 38 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_stop" ]
+        %displayResult.1 = local;
+        %tmp.2 = getv ? :_scanDataModel;
+        %tmp.3 = getv function %tmp.2 :getDisplayResult;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %displayResult.1 %tmp.4;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 40 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_stop" ]
+        %str.2 = local;
+        %tmp.5 = "Nitrox: ";
+        %tmp.7 = getv ? :_scanDataModel;
+        %tmp.8 = getv function %tmp.7 :getDisplayIndex;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = add %tmp.5 %tmp.9;
+        %tmp.11 = "/";
+        %tmp.12 = add %tmp.10 %tmp.11;
+        %tmp.14 = getv ? :_scanDataModel;
+        %tmp.15 = getv function %tmp.14 :getResultCount;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = add %tmp.12 %tmp.16;
+        lputv %str.2 %tmp.17;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 42 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_42_8_if_stmt:
+        %tmp.18 = null;
+        %tmp.20 = lgetv %displayResult.1;
+        %tmp.21 = ne %tmp.18 %tmp.20;
+        bf %tmp.21 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_42_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_42_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_42_35_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 43 12 ]
+        %tmp.22 = lgetv %str.2;
+        %tmp.23 = "\nName:\n";
+        %tmp.24 = lgetv %displayResult.1;
+        %tmp.25 = as %tmp.24 { (!Null) };
+        %tmp.26 = getv function %tmp.25 :getDeviceName;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        %tmp.28 = add %tmp.23 %tmp.27;
+        %tmp.29 = "\nRSSI: ";
+        %tmp.30 = add %tmp.28 %tmp.29;
+        %tmp.31 = lgetv %displayResult.1;
+        %tmp.32 = as %tmp.31 { (!Null) };
+        %tmp.33 = getv function %tmp.32 :getRssi;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        %tmp.35 = add %tmp.30 %tmp.34;
+        %tmp.36 = " dbm";
+        %tmp.37 = add %tmp.35 %tmp.36;
+        %tmp.38 = add %tmp.22 %tmp.37;
+        lputv %str.2 %tmp.38;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_42_35_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_42_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_42_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 46 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_stop" ]
+        %strDimen.3 = local;
+        %tmp.39 = lgetv %dc;
+        %tmp.40 = getv function %tmp.39 :getTextDimensions;
+        %tmp.42 = lgetv %str.2;
+        %tmp.43 = getm $.Toybox.Graphics;
+        %tmp.44 = getv %tmp.43 :FONT_SMALL;
+        %tmp.45 = invoke %tmp.39 %tmp.40(%tmp.42, %tmp.44);
+        lputv %strDimen.3 %tmp.45;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 47 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_stop" ]
+        %textOffset.4 = local;
+        %tmp.46 = lgetv %dc;
+        %tmp.47 = getv function %tmp.46 :getHeight;
+        %tmp.48 = invoke %tmp.46 %tmp.47();
+        %tmp.49 = 2;
+        %tmp.50 = div %tmp.48 %tmp.49;
+        lputv %textOffset.4 %tmp.50;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 48 8 ]
+        %tmp.51 = lgetv %textOffset.4;
+        %tmp.53 = lgetv %strDimen.3;
+        %tmp.54 = 1;
+        %tmp.55 = agetv %tmp.53 %tmp.54;
+        %tmp.56 = 2;
+        %tmp.57 = div %tmp.55 %tmp.56;
+        %tmp.58 = sub %tmp.51 %tmp.57;
+        lputv %textOffset.4 %tmp.58;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 50 8 ]
+        %tmp.59 = lgetv %dc;
+        %tmp.60 = getv function %tmp.59 :setColor;
+        %tmp.61 = getm $.Toybox.Graphics;
+        %tmp.62 = getv %tmp.61 :COLOR_BLACK;
+        %tmp.63 = getm $.Toybox.Graphics;
+        %tmp.64 = getv %tmp.63 :COLOR_WHITE;
+        invoke %tmp.59 %tmp.60(%tmp.62, %tmp.64);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 51 8 ]
+        %tmp.65 = lgetv %dc;
+        %tmp.66 = getv function %tmp.65 :clear;
+        invoke %tmp.65 %tmp.66();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" 52 8 ]
+        %tmp.67 = lgetv %dc;
+        %tmp.68 = getv function %tmp.67 :drawText;
+        %tmp.69 = lgetv %dc;
+        %tmp.70 = getv function %tmp.69 :getWidth;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        %tmp.72 = 2;
+        %tmp.73 = div %tmp.71 %tmp.72;
+        %tmp.75 = lgetv %textOffset.4;
+        %tmp.76 = getm $.Toybox.Graphics;
+        %tmp.77 = getv %tmp.76 :FONT_SMALL;
+        %tmp.79 = lgetv %str.2;
+        %tmp.80 = getm $.Toybox.Graphics;
+        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.67 %tmp.68(%tmp.73, %tmp.75, %tmp.77, %tmp.79, %tmp.81);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanView_mc_37_4_stop:
+    }
+    //! Called when this View is removed from the screen. Save the
+    //! state of this View here. This includes freeing resources from
+    //! memory.
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 58; ]
+    public
+    function onHide() as Void {
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc"; @line = 7; ]
+<init> {
+}

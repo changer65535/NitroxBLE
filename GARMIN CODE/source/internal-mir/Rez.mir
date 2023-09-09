@@ -1,0 +1,118 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var Co2Ind as Symbol;
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        var HumidityInd as Symbol;
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
+        var LeafInd as Symbol;
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
+        var PressureInd as Symbol;
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; ]
+        var TempInd as Symbol;
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; ]
+        var Launcher as Symbol;
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 17; ]
+    module Fonts {
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 17; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 20; ]
+    module JsonData {
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 20; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 23; ]
+    module Layouts {
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 23; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 26; ]
+    module Menus {
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 26; ]
+        <init> {
+        }
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 27; ]
+        class MainMenu extends WatchUi.Menu{
+            [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 27; ]
+            <init> {
+            }
+            [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 27; ]
+            static
+            <init> {
+            }
+            [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 28; ]
+            function initialize() as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_gen_006_B3258_00_source_Rez_mcgen_28_34_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" 29 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" 30 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = getm $.Toybox.WatchUi;
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                %tmp.8 = getm $;
+                %tmp.9 = getv %tmp.8 :Rez;
+                %tmp.10 = getv %tmp.9 :Strings;
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                %tmp.15 = const :item_1;
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" 31 16 ]
+                %tmp.16 = self;
+                %tmp.17 = getv function %tmp.16 :addItem;
+                %tmp.18 = getm $.Toybox.WatchUi;
+                %tmp.19 = getv function %tmp.18 :loadResource;
+                %tmp.20 = getm $;
+                %tmp.21 = getv %tmp.20 :Rez;
+                %tmp.22 = getv %tmp.21 :Strings;
+                %tmp.23 = getv %tmp.22 :menu_label_2;
+                %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+                %tmp.25 = as %tmp.24 String;
+                %tmp.27 = const :item_2;
+                invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_gen_006_B3258_00_source_Rez_mcgen_28_34_stop:
+            }
+        }
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 36; ]
+    module Strings {
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 36; ]
+        <init> {
+        }
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
+        var menu_label_1 as Symbol;
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        var menu_label_2 as Symbol;
+        [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

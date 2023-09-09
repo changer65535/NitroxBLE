@@ -1,0 +1,146 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 7; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 11; ]
+class ViewController{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 12; @position = 16; ]
+    private
+    var _modelFactory as DataModelFactory;
+    //! Constructor
+    //! @param modelFactory Factory to create models
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 16; ]
+    public
+    function initialize(modelFactory as DataModelFactory) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_16_65_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 17 8 ]
+        %tmp.2 = lgetv %modelFactory;
+        putv self :_modelFactory %tmp.2;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_16_65_stop:
+    }
+    //! Return the initial views for the app
+    //! @return Array Pair [View, InputDelegate]
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 22; ]
+    public
+    function getInitialView() as Array<ScanView or ScanDelegate> {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_23_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 24 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_23_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_23_4_stop" ]
+        %scanDataModel.1 = local;
+        %tmp.2 = getv ? :_modelFactory;
+        %tmp.3 = getv function %tmp.2 :getScanDataModel;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %scanDataModel.1 %tmp.4;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 25 8 ]
+        %tmp.5 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.6 = getv function %tmp.5 :setScanState;
+        %tmp.7 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.8 = getv %tmp.7 :SCAN_STATE_SCANNING;
+        invoke %tmp.5 %tmp.6(%tmp.8);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 26 8 ]
+        %tmp.9 = newa Array<ScanView or ScanDelegate> 2;
+        %tmp.13 = getm $;
+        %tmp.14 = getv %tmp.13 :ScanView;
+        %tmp.16 = lgetv %scanDataModel.1;
+        %tmp.10 = newc %tmp.14 (%tmp.16);
+        %tmp.17 = dup %tmp.9;
+        %tmp.18 = aputv %tmp.17 0 %tmp.10;
+        %tmp.22 = getm $;
+        %tmp.23 = getv %tmp.22 :ScanDelegate;
+        %tmp.25 = lgetv %scanDataModel.1;
+        %tmp.27 = lgetv %self;
+        %tmp.19 = newc %tmp.23 (%tmp.25, %tmp.27);
+        %tmp.28 = dup %tmp.18;
+        %tmp.29 = aputv %tmp.28 1 %tmp.19;
+        ret %tmp.29;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_23_4_stop:
+    }
+    //! Push the scan menu view
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 30; ]
+    public
+    function pushScanMenu() as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_31_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 32 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_31_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_31_4_stop" ]
+        %menu.1 = local;
+        %tmp.3 = getm $.Toybox.WatchUi;
+        %tmp.4 = getv function ? %tmp.3 :Menu;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %menu.1 %tmp.1;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 33 8 ]
+        %tmp.5 = lgetv %menu.1;
+        %tmp.6 = getv function %tmp.5 :setTitle;
+        %tmp.7 = "Main Menu";
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 34 8 ]
+        %tmp.8 = lgetv %menu.1;
+        %tmp.9 = getv function %tmp.8 :addItem;
+        %tmp.10 = "Scan";
+        %tmp.12 = const :search;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.12);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 35 2 ]
+        %tmp.13 = lgetv %menu.1;
+        %tmp.14 = getv function %tmp.13 :addItem;
+        %tmp.15 = "Stop";
+        %tmp.17 = const :stop;
+        invoke %tmp.13 %tmp.14(%tmp.15, %tmp.17);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 39 5 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_31_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_31_4_stop" ]
+        %mmd.2 = local;
+        %tmp.21 = getm $;
+        %tmp.22 = getv %tmp.21 :MainMenuDelegate;
+        %tmp.18 = newc %tmp.22 ();
+        lputv %mmd.2 %tmp.18;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 41 5 ]
+        %tmp.23 = getm $.Toybox.WatchUi;
+        %tmp.24 = getv function %tmp.23 :pushView;
+        %tmp.26 = lgetv %menu.1;
+        %tmp.28 = lgetv %mmd.2;
+        %tmp.29 = getm $.Toybox.WatchUi;
+        %tmp.30 = getv %tmp.29 :SLIDE_UP;
+        invoke %tmp.23 %tmp.24(%tmp.26, %tmp.28, %tmp.30);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_31_4_stop:
+    }
+    //! Push the device view
+    //! @param scanResult The scan result for the device view to push
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 46; ]
+    public
+    function pushDeviceView(scanResult as ScanResult) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_47_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 48 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_47_4_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_47_4_stop" ]
+        %deviceDataModel.1 = local;
+        %tmp.2 = getv ? :_modelFactory;
+        %tmp.3 = getv function %tmp.2 :getDeviceDataModel;
+        %tmp.5 = lgetv %scanResult;
+        %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+        lputv %deviceDataModel.1 %tmp.6;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" 49 8 ]
+        %tmp.7 = getm $.Toybox.WatchUi;
+        %tmp.8 = getv function %tmp.7 :pushView;
+        %tmp.12 = getm $;
+        %tmp.13 = getv %tmp.12 :DeviceView;
+        %tmp.15 = lgetv %deviceDataModel.1;
+        %tmp.9 = newc %tmp.13 (%tmp.15);
+        %tmp.19 = getm $;
+        %tmp.20 = getv %tmp.19 :DeviceDelegate;
+        %tmp.22 = lgetv %deviceDataModel.1;
+        %tmp.16 = newc %tmp.20 (%tmp.22);
+        %tmp.23 = getm $.Toybox.WatchUi;
+        %tmp.24 = getv %tmp.23 :SLIDE_UP;
+        invoke %tmp.7 %tmp.8(%tmp.9, %tmp.16, %tmp.24);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ViewController_mc_47_4_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc"; @line = 7; ]
+<init> {
+}

@@ -1,0 +1,232 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 7; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 11; ]
+class DataModelFactory{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 13; @position = 16; ]
+    private
+    var _delegate as ThingyDelegate;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 14; @position = 16; ]
+    private
+    var _profileManager as ProfileManager;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 17; @position = 16; ]
+    private
+    var _scanDataModel as WeakReference or Null;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 18; @position = 16; ]
+    private
+    var _deviceDataModel as WeakReference or Null;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 19; @position = 16; ]
+    private
+    var _envModel as WeakReference or Null;
+    //! Constructor
+    //! @param delegate The BLE delegate to use for the models
+    //! @param profileManager The profile manager to use for a profile model
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 24; ]
+    public
+    function initialize(delegate as ThingyDelegate, profileManager as ProfileManager) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_24_93_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 25 8 ]
+        %tmp.2 = lgetv %delegate;
+        putv self :_delegate %tmp.2;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 26 8 ]
+        %tmp.4 = lgetv %profileManager;
+        putv self :_profileManager %tmp.4;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_24_93_stop:
+    }
+    //! Get a scan data model instance
+    //! @return The current scan data model or a new one
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 31; ]
+    public
+    function getScanDataModel() as ScanDataModel {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_31_56_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 32 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_31_56_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_31_56_stop" ]
+        %scanDataModel.1 = local;
+        %tmp.2 = getv ? :_scanDataModel;
+        lputv %scanDataModel.1 %tmp.2;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 33 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_33_8_if_stmt:
+        %tmp.4 = lgetv %scanDataModel.1;
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_33_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_33_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_33_35_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 34 12 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_34_12_if_stmt:
+        %tmp.7 = lgetv %scanDataModel.1;
+        %tmp.8 = as %tmp.7 { (!Null) };
+        %tmp.9 = getv function %tmp.8 :stillAlive;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        bf %tmp.10 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_34_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_34_12_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_34_44_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 35 16 ]
+        %tmp.11 = lgetv %scanDataModel.1;
+        %tmp.12 = as %tmp.11 { (!Null) };
+        %tmp.13 = getv function %tmp.12 :get;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = as %tmp.14 ScanDataModel;
+        ret %tmp.15;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_34_44_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_34_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_34_12_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_33_35_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_33_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_33_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 39 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_31_56_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_31_56_stop" ]
+        %dataModel.2 = local;
+        %tmp.19 = getm $;
+        %tmp.20 = getv %tmp.19 :ScanDataModel;
+        %tmp.22 = getv ? :_delegate;
+        %tmp.16 = newc %tmp.20 (%tmp.22);
+        lputv %dataModel.2 %tmp.16;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 40 8 ]
+        %tmp.23 = lgetv %dataModel.2;
+        %tmp.24 = getv function %tmp.23 :weak;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        putv self :_scanDataModel %tmp.25;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 42 8 ]
+        %tmp.27 = lgetv %dataModel.2;
+        ret %tmp.27;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_31_56_stop:
+    }
+    //! Get a device data model instance
+    //! @param scanResult The scan result to use for a new model
+    //! @return The current device data model or a new one
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 48; ]
+    public
+    function getDeviceDataModel(scanResult as ScanResult) as DeviceDataModel {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_48_84_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 49 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_48_84_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_48_84_stop" ]
+        %deviceDataModel.1 = local;
+        %tmp.2 = getv ? :_deviceDataModel;
+        lputv %deviceDataModel.1 %tmp.2;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 50 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_50_8_if_stmt:
+        %tmp.4 = lgetv %deviceDataModel.1;
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_50_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_50_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_50_37_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 51 12 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_51_12_if_stmt:
+        %tmp.7 = lgetv %deviceDataModel.1;
+        %tmp.8 = as %tmp.7 { (!Null) };
+        %tmp.9 = getv function %tmp.8 :stillAlive;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        bf %tmp.10 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_51_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_51_12_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_51_46_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 52 16 ]
+        %tmp.11 = lgetv %deviceDataModel.1;
+        %tmp.12 = as %tmp.11 { (!Null) };
+        %tmp.13 = getv function %tmp.12 :get;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = as %tmp.14 DeviceDataModel;
+        ret %tmp.15;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_51_46_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_51_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_51_12_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_50_37_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_50_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_50_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 56 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_48_84_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_48_84_stop" ]
+        %dataModel.2 = local;
+        %tmp.19 = getm $;
+        %tmp.20 = getv %tmp.19 :DeviceDataModel;
+        %tmp.22 = getv ? :_delegate;
+        %tmp.24 = lgetv %self;
+        %tmp.26 = lgetv %scanResult;
+        %tmp.16 = newc %tmp.20 (%tmp.22, %tmp.24, %tmp.26);
+        lputv %dataModel.2 %tmp.16;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 57 8 ]
+        %tmp.27 = lgetv %dataModel.2;
+        %tmp.28 = getv function %tmp.27 :weak;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        putv self :_deviceDataModel %tmp.29;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 59 8 ]
+        %tmp.31 = lgetv %dataModel.2;
+        ret %tmp.31;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_48_84_stop:
+    }
+    //! Get a environment profile model instance
+    //! @param device The device to use for a new model
+    //! @return The current environment profile model or a new one
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 65; ]
+    public
+    function getEnvironmentModel(device as Device) as EnvironmentProfileModel {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_65_85_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 66 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_65_85_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_65_85_stop" ]
+        %envModel.1 = local;
+        %tmp.2 = getv ? :_envModel;
+        lputv %envModel.1 %tmp.2;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 67 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_67_8_if_stmt:
+        %tmp.4 = lgetv %envModel.1;
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_67_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_67_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_67_30_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 68 12 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_68_12_if_stmt:
+        %tmp.7 = lgetv %envModel.1;
+        %tmp.8 = as %tmp.7 { (!Null) };
+        %tmp.9 = getv function %tmp.8 :stillAlive;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        bf %tmp.10 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_68_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_68_12_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_68_39_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 69 16 ]
+        %tmp.11 = lgetv %envModel.1;
+        %tmp.12 = as %tmp.11 { (!Null) };
+        %tmp.13 = getv function %tmp.12 :get;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = as %tmp.14 EnvironmentProfileModel;
+        ret %tmp.15;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_68_39_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_68_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_68_12_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_67_30_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_67_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_67_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 73 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_65_85_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_65_85_stop" ]
+        %dataModel.2 = local;
+        %tmp.19 = getm $;
+        %tmp.20 = getv %tmp.19 :EnvironmentProfileModel;
+        %tmp.22 = getv ? :_delegate;
+        %tmp.24 = getv ? :_profileManager;
+        %tmp.26 = lgetv %device;
+        %tmp.16 = newc %tmp.20 (%tmp.22, %tmp.24, %tmp.26);
+        lputv %dataModel.2 %tmp.16;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 74 8 ]
+        %tmp.27 = lgetv %dataModel.2;
+        %tmp.28 = getv function %tmp.27 :weak;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        putv self :_envModel %tmp.29;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" 76 8 ]
+        %tmp.31 = lgetv %dataModel.2;
+        ret %tmp.31;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_DataModelFactory_mc_65_85_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc"; @line = 7; ]
+<init> {
+}

@@ -1,0 +1,250 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 7; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 11; ]
+class ScanDataModel{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 13; @position = 16; ]
+    private
+    var _displayResult as Number;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 14; @position = 16; ]
+    private
+    var _scanResults as Array<ScanResult>;
+    //! Constructor
+    //! @param bleDelegate The BLE delegate for this model
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 18; ]
+    public
+    function initialize(bleDelegate as ThingyDelegate) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_18_62_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 19 8 ]
+        %tmp.1 = lgetv %bleDelegate;
+        %tmp.2 = getv function %tmp.1 :notifyScanResult;
+        %tmp.4 = lgetv %self;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 21 8 ]
+        %tmp.5 = newa Array<ScanResult> 0;
+        putv self :_scanResults %tmp.5;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 22 8 ]
+        %tmp.6 = 0;
+        putv self :_displayResult %tmp.6;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_18_62_stop:
+    }
+    //! Process a new scan result
+    //! @param scanResult The new scan result
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 27; ]
+    public
+    function procScanResult(scanResult as ScanResult) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_27_69_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 28 8 ]
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_27_69_start" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_27_69_stop" ]
+        %newDevice.1 = local;
+        %tmp.1 = true;
+        lputv %newDevice.1 %tmp.1;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 31 8 ]
+        for @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_test @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_incr @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_init:
+        [ "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_begin" "_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_end" ]
+        %i.2 = local;
+        %tmp.2 = 0;
+        lputv %i.2 %tmp.2;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_test:
+        %tmp.4 = lgetv %i.2;
+        %tmp.6 = getv ? :_scanResults;
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.4 %tmp.8;
+        bf %tmp.9 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_begin:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_32_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 33 12 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_33_12_if_stmt:
+        %tmp.10 = lgetv %scanResult;
+        %tmp.11 = getv function %tmp.10 :isSameDevice;
+        %tmp.13 = getv ? :_scanResults;
+        %tmp.15 = lgetv %i.2;
+        %tmp.16 = agetv %tmp.13 %tmp.15;
+        %tmp.17 = invoke %tmp.10 %tmp.11(%tmp.16);
+        bf %tmp.17 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_33_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_33_12_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_35_12_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 36 16 ]
+        %tmp.18 = false;
+        lputv %newDevice.1 %tmp.18;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 37 16 ]
+        %tmp.19 = getv self :_scanResults;
+        %tmp.21 = lgetv %scanResult;
+        %tmp.23 = lgetv %i.2;
+        aputv %tmp.19 %tmp.23 %tmp.21;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 38 16 ]
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_35_12_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_33_12_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_33_12_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_32_8_stop:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_incr:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 31 ]
+        %tmp.26 = lgetv %i.2;
+        %tmp.27 = add %tmp.26 1;
+        lputv %i.2 %tmp.27;
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_test;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_31_8_for_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 42 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_42_8_if_stmt:
+        %tmp.29 = lgetv %newDevice.1;
+        bf %tmp.29 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_42_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_42_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_43_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 44 12 ]
+        %tmp.31 = getv ? :_scanResults;
+        %tmp.32 = getv function %tmp.31 :add;
+        %tmp.34 = lgetv %scanResult;
+        invoke %tmp.31 %tmp.32(%tmp.34);
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_43_8_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_42_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_42_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 47 8 ]
+        %tmp.35 = getm $.Toybox.WatchUi;
+        %tmp.36 = getv function %tmp.35 :requestUpdate;
+        invoke %tmp.35 %tmp.36();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_27_69_stop:
+    }
+    //! Update display to next result
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 51; ]
+    public
+    function nextResult() as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_51_41_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 52 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_52_8_if_stmt:
+        %tmp.2 = getv ? :_displayResult;
+        %tmp.4 = getv ? :_scanResults;
+        %tmp.5 = getv function %tmp.4 :size;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = 1;
+        %tmp.8 = sub %tmp.6 %tmp.7;
+        %tmp.9 = lt %tmp.2 %tmp.8;
+        bf %tmp.9 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_52_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_52_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_52_56_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 53 12 ]
+        %tmp.12 = getv ? :_displayResult;
+        %tmp.13 = add %tmp.12 1;
+        putv self :_displayResult dup %tmp.13;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 54 12 ]
+        %tmp.14 = getm $.Toybox.WatchUi;
+        %tmp.15 = getv function %tmp.14 :requestUpdate;
+        invoke %tmp.14 %tmp.15();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_52_56_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_52_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_52_8_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_51_41_stop:
+    }
+    //! Update display to previous result
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 59; ]
+    public
+    function previousResult() as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_59_45_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 60 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_60_8_if_stmt:
+        %tmp.2 = getv ? :_displayResult;
+        %tmp.3 = 0;
+        %tmp.4 = gt %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_60_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_60_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_60_32_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 61 12 ]
+        %tmp.7 = getv ? :_displayResult;
+        %tmp.8 = sub %tmp.7 1;
+        putv self :_displayResult dup %tmp.8;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 62 12 ]
+        %tmp.9 = getm $.Toybox.WatchUi;
+        %tmp.10 = getv function %tmp.9 :requestUpdate;
+        invoke %tmp.9 %tmp.10();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_60_32_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_60_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_60_8_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_59_45_stop:
+    }
+    //! Get the current scan result
+    //! @return The current scan result
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 68; ]
+    public
+    function getDisplayResult() as ScanResult or Null {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_68_54_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 69 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_69_8_if_stmt:
+        %tmp.2 = getv ? :_scanResults;
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 0;
+        %tmp.6 = eq %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_69_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_69_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_69_38_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 70 12 ]
+        %tmp.7 = null;
+        ret %tmp.7;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_69_38_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_69_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_69_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 73 8 ]
+        %tmp.9 = getv ? :_scanResults;
+        %tmp.11 = getv ? :_displayResult;
+        %tmp.12 = agetv %tmp.9 %tmp.11;
+        ret %tmp.12;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_68_54_stop:
+    }
+    //! Get the current display index
+    //! @return The display index
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 78; ]
+    public
+    function getDisplayIndex() as Number {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_78_48_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 79 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_79_8_if_stmt:
+        %tmp.2 = getv ? :_scanResults;
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 0;
+        %tmp.6 = eq %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_79_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_79_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_79_38_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 80 12 ]
+        %tmp.7 = 0;
+        ret %tmp.7;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_79_38_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_79_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_79_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 83 8 ]
+        %tmp.9 = getv ? :_displayResult;
+        %tmp.10 = 1;
+        %tmp.11 = add %tmp.9 %tmp.10;
+        ret %tmp.11;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_78_48_stop:
+    }
+    //! Get the number of scan results
+    //! @return The number of scan results
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 88; ]
+    public
+    function getResultCount() as Number {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_88_47_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" 89 8 ]
+        %tmp.2 = getv ? :_scanResults;
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        ret %tmp.4;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_ScanDataModel_mc_88_47_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc"; @line = 7; ]
+<init> {
+}

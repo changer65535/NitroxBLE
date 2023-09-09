@@ -1,0 +1,150 @@
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 7; ]
+import Toybox.Application;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 8; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 9; ]
+import Toybox.Lang;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 10; ]
+import Toybox.WatchUi;
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 13; ]
+class NordicThingyApp extends Application.AppBase{
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 13; ]
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 13; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 15; @position = 16; ]
+    private
+    var _bleDelegate as ThingyDelegate or Null;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 16; @position = 16; ]
+    private
+    var _profileManager as ProfileManager or Null;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 17; @position = 16; ]
+    private
+    var _modelFactory as DataModelFactory or Null;
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 18; @position = 16; ]
+    private
+    var _viewController as ViewController or Null;
+    //! Constructor
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 21; ]
+    public
+    function initialize() as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_21_33_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 22 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_21_33_stop:
+    }
+    //! Handle app startup
+    //! @param state Startup arguments
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 27; ]
+    public
+    function onStart(state as Dictionary or Null) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_28_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 29 8 ]
+        %tmp.4 = getm $;
+        %tmp.5 = getv %tmp.4 :ProfileManager;
+        %tmp.1 = newc %tmp.5 ();
+        putv self :_profileManager %tmp.1;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 30 8 ]
+        %tmp.9 = getm $;
+        %tmp.10 = getv %tmp.9 :ThingyDelegate;
+        %tmp.12 = getv ? :_profileManager;
+        %tmp.13 = as %tmp.12 ProfileManager;
+        %tmp.6 = newc %tmp.10 (%tmp.13);
+        putv self :_bleDelegate %tmp.6;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 31 8 ]
+        %tmp.17 = getm $;
+        %tmp.18 = getv %tmp.17 :DataModelFactory;
+        %tmp.20 = getv ? :_bleDelegate;
+        %tmp.21 = as %tmp.20 ThingyDelegate;
+        %tmp.23 = getv ? :_profileManager;
+        %tmp.24 = as %tmp.23 ProfileManager;
+        %tmp.14 = newc %tmp.18 (%tmp.21, %tmp.24);
+        putv self :_modelFactory %tmp.14;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 32 8 ]
+        %tmp.28 = getm $;
+        %tmp.29 = getv %tmp.28 :ViewController;
+        %tmp.31 = getv ? :_modelFactory;
+        %tmp.32 = as %tmp.31 DataModelFactory;
+        %tmp.25 = newc %tmp.29 (%tmp.32);
+        putv self :_viewController %tmp.25;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 34 8 ]
+        %tmp.33 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.34 = getv function %tmp.33 :setDelegate;
+        %tmp.36 = getv ? :_bleDelegate;
+        %tmp.37 = as %tmp.36 ThingyDelegate;
+        invoke %tmp.33 %tmp.34(%tmp.37);
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 35 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_35_8_if_stmt:
+        %tmp.39 = getv ? :_profileManager;
+        %tmp.40 = null;
+        %tmp.41 = ne %tmp.39 %tmp.40;
+        bf %tmp.41 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_35_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_35_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_35_37_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 36 12 ]
+        %tmp.43 = getv ? :_profileManager;
+        %tmp.44 = as %tmp.43 { (!Null) };
+        %tmp.45 = getv function %tmp.44 :registerProfiles;
+        invoke %tmp.44 %tmp.45();
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_35_37_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_35_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_35_8_if_end:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_28_4_stop:
+    }
+    //! Handle app shutdown
+    //! @param state Shutdown arguments
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 42; ]
+    public
+    function onStop(state as Dictionary or Null) as Void {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_43_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 44 8 ]
+        %tmp.1 = null;
+        putv self :_viewController %tmp.1;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 45 8 ]
+        %tmp.2 = null;
+        putv self :_modelFactory %tmp.2;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 46 8 ]
+        %tmp.3 = null;
+        putv self :_profileManager %tmp.3;
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 47 8 ]
+        %tmp.4 = null;
+        putv self :_bleDelegate %tmp.4;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_43_4_stop:
+    }
+    //! Return the initial views for the app
+    //! @return Array Pair [View, InputDelegate]
+    [ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 52; ]
+    public
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_53_4_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 54 8 ]
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_54_8_if_stmt:
+        %tmp.2 = getv ? :_viewController;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_54_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_54_8_if_true:
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_55_8_start:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 56 12 ]
+        %tmp.6 = getv ? :_viewController;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        %tmp.8 = getv function %tmp.7 :getInitialView;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        ret %tmp.9;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_55_8_stop:
+        goto @_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_54_8_if_end;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_54_8_if_end:
+[ "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" 58 8 ]
+        %tmp.10 = null;
+        ret %tmp.10;
+_Users_changer65535_Documents_GARMIN_APPS_nitrox01_source_NitroxApp_mc_53_4_stop:
+    }
+}
+[ @file = "/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc"; @line = 7; ]
+<init> {
+}

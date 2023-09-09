@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="1" lineNum="9" parent="globals/ProfileManager" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="1" lineNum="19" parent="globals/ProfileManager" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="1" lineNum="20" parent="globals/ProfileManager" pc="268435488" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="1" lineNum="21" parent="globals/ProfileManager" pc="268435516" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="1" lineNum="22" parent="globals/ProfileManager" pc="268435544" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="1" lineNum="30" parent="globals/ProfileManager" pc="268435572" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="2" lineNum="48" parent="globals/ProfileManager" pc="268435818" symbol="registerProfiles"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ProfileManager.mc" id="2" lineNum="49" parent="globals/ProfileManager" pc="268435820" symbol="registerProfiles"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="4" lineNum="13" parent="globals/NordicThingyApp" pc="268435845" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="27" parent="globals/NordicThingyApp" pc="268435864" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="29" parent="globals/NordicThingyApp" pc="268435866" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="30" parent="globals/NordicThingyApp" pc="268435900" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="31" parent="globals/NordicThingyApp" pc="268435942" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="32" parent="globals/NordicThingyApp" pc="268435992" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="34" parent="globals/NordicThingyApp" pc="268436034" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="35" parent="globals/NordicThingyApp" pc="268436058" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="5" lineNum="36" parent="globals/NordicThingyApp" pc="268436071" symbol="onStart"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="6" lineNum="52" parent="globals/NordicThingyApp" pc="268436093" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="6" lineNum="54" parent="globals/NordicThingyApp" pc="268436095" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="6" lineNum="56" parent="globals/NordicThingyApp" pc="268436108" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="6" lineNum="58" parent="globals/NordicThingyApp" pc="268436129" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="7" lineNum="21" parent="globals/NordicThingyApp" pc="268436131" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="7" lineNum="22" parent="globals/NordicThingyApp" pc="268436133" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="8" lineNum="42" parent="globals/NordicThingyApp" pc="268436152" symbol="onStop"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="8" lineNum="44" parent="globals/NordicThingyApp" pc="268436154" symbol="onStop"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="8" lineNum="45" parent="globals/NordicThingyApp" pc="268436163" symbol="onStop"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="8" lineNum="46" parent="globals/NordicThingyApp" pc="268436172" symbol="onStop"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/NitroxApp.mc" id="8" lineNum="47" parent="globals/NordicThingyApp" pc="268436181" symbol="onStop"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="9" lineNum="10" parent="globals/ScanView" pc="268436191" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="11" lineNum="23" parent="globals/ScanView" pc="268436210" symbol="onLayout"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="12" lineNum="15" parent="globals/ScanView" pc="268436213" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="12" lineNum="16" parent="globals/ScanView" pc="268436215" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="12" lineNum="18" parent="globals/ScanView" pc="268436233" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="36" parent="globals/ScanView" pc="268436244" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="38" parent="globals/ScanView" pc="268436248" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="40" parent="globals/ScanView" pc="268436267" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="42" parent="globals/ScanView" pc="268436316" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="43" parent="globals/ScanView" pc="268436323" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="46" parent="globals/ScanView" pc="268436372" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="47" parent="globals/ScanView" pc="268436392" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="48" parent="globals/ScanView" pc="268436411" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="50" parent="globals/ScanView" pc="268436430" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="51" parent="globals/ScanView" pc="268436452" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanView.mc" id="14" lineNum="52" parent="globals/ScanView" pc="268436464" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" id="15" lineNum="7" parent="globals/Rez" pc="268436508" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="16" lineNum="11" parent="globals/ThingyDelegate" pc="268436532" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="17" lineNum="78" parent="globals/ThingyDelegate" pc="268436551" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="17" lineNum="79" parent="globals/ThingyDelegate" pc="268436555" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="17" lineNum="80" parent="globals/ThingyDelegate" pc="268436565" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="17" lineNum="81" parent="globals/ThingyDelegate" pc="268436572" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="17" lineNum="82" parent="globals/ThingyDelegate" pc="268436586" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="18" lineNum="107" parent="globals/ThingyDelegate" pc="268436618" symbol="notifyCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="18" lineNum="108" parent="globals/ThingyDelegate" pc="268436620" symbol="notifyCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="19" lineNum="95" parent="globals/ThingyDelegate" pc="268436640" symbol="notifyConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="19" lineNum="96" parent="globals/ThingyDelegate" pc="268436642" symbol="notifyConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="20" lineNum="89" parent="globals/ThingyDelegate" pc="268436662" symbol="notifyScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="20" lineNum="90" parent="globals/ThingyDelegate" pc="268436664" symbol="notifyScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="21" lineNum="66" parent="globals/ThingyDelegate" pc="268436684" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="21" lineNum="67" parent="globals/ThingyDelegate" pc="268436688" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="21" lineNum="68" parent="globals/ThingyDelegate" pc="268436698" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="21" lineNum="69" parent="globals/ThingyDelegate" pc="268436705" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="21" lineNum="70" parent="globals/ThingyDelegate" pc="268436719" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="22" lineNum="54" parent="globals/ThingyDelegate" pc="268436751" symbol="onConnectedStateChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="22" lineNum="55" parent="globals/ThingyDelegate" pc="268436755" symbol="onConnectedStateChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="22" lineNum="56" parent="globals/ThingyDelegate" pc="268436765" symbol="onConnectedStateChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="22" lineNum="57" parent="globals/ThingyDelegate" pc="268436772" symbol="onConnectedStateChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="22" lineNum="58" parent="globals/ThingyDelegate" pc="268436786" symbol="onConnectedStateChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="23" lineNum="126" parent="globals/ThingyDelegate" pc="268436816" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="23" lineNum="127" parent="globals/ThingyDelegate" pc="268436820" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="23" lineNum="129" parent="globals/ThingyDelegate" pc="268436840" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="23" lineNum="130" parent="globals/ThingyDelegate" pc="268436863" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="23" lineNum="131" parent="globals/ThingyDelegate" pc="268436892" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="23" lineNum="133" parent="globals/ThingyDelegate" pc="268436908" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="23" lineNum="137" parent="globals/ThingyDelegate" pc="268436930" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="24" lineNum="101" parent="globals/ThingyDelegate" pc="268436933" symbol="notifyDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="24" lineNum="102" parent="globals/ThingyDelegate" pc="268436935" symbol="notifyDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="25" lineNum="113" parent="globals/ThingyDelegate" pc="268436955" symbol="&lt;globals/ThingyDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="25" lineNum="114" parent="globals/ThingyDelegate" pc="268436959" symbol="&lt;globals/ThingyDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="25" lineNum="115" parent="globals/ThingyDelegate" pc="268436969" symbol="&lt;globals/ThingyDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="25" lineNum="116" parent="globals/ThingyDelegate" pc="268436976" symbol="&lt;globals/ThingyDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="25" lineNum="117" parent="globals/ThingyDelegate" pc="268436990" symbol="&lt;globals/ThingyDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="26" lineNum="21" parent="globals/ThingyDelegate" pc="268437020" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="26" lineNum="22" parent="globals/ThingyDelegate" pc="268437022" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="26" lineNum="23" parent="globals/ThingyDelegate" pc="268437040" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="28" parent="globals/ThingyDelegate" pc="268437051" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="29" parent="globals/ThingyDelegate" pc="268437055" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="30" parent="globals/ThingyDelegate" pc="268437075" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="32" parent="globals/ThingyDelegate" pc="268437093" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="33" parent="globals/ThingyDelegate" pc="268437116" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="34" parent="globals/ThingyDelegate" pc="268437157" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="35" parent="globals/ThingyDelegate" pc="268437180" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="36" parent="globals/ThingyDelegate" pc="268437209" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="38" parent="globals/ThingyDelegate" pc="268437225" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="42" parent="globals/ThingyDelegate" pc="268437253" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ThingyDelegate.mc" id="27" lineNum="43" parent="globals/ThingyDelegate" pc="268437276" symbol="onScanResults"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="28" lineNum="11" parent="globals/MainMenuDelegate" pc="268437316" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="29" lineNum="22" parent="globals/MainMenuDelegate" pc="268437335" symbol="onMenuItem"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="29" lineNum="24" parent="globals/MainMenuDelegate" pc="268437337" symbol="onMenuItem"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="29" lineNum="26" parent="globals/MainMenuDelegate" pc="268437348" symbol="onMenuItem"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="29" lineNum="28" parent="globals/MainMenuDelegate" pc="268437372" symbol="onMenuItem"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="29" lineNum="30" parent="globals/MainMenuDelegate" pc="268437383" symbol="onMenuItem"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="30" lineNum="16" parent="globals/MainMenuDelegate" pc="268437408" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/MainMenuDelegate.mc" id="30" lineNum="17" parent="globals/MainMenuDelegate" pc="268437410" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="31" lineNum="51" parent="globals/ScanDataModel" pc="268437429" symbol="nextResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="31" lineNum="52" parent="globals/ScanDataModel" pc="268437431" symbol="nextResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="31" lineNum="53" parent="globals/ScanDataModel" pc="268437466" symbol="nextResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="31" lineNum="54" parent="globals/ScanDataModel" pc="268437485" symbol="nextResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="27" parent="globals/ScanDataModel" pc="268437505" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="28" parent="globals/ScanDataModel" pc="268437509" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="31" parent="globals/ScanDataModel" pc="268437513" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="33" parent="globals/ScanDataModel" pc="268437543" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="36" parent="globals/ScanDataModel" pc="268437568" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="37" parent="globals/ScanDataModel" pc="268437572" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="38" parent="globals/ScanDataModel" pc="268437585" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="42" parent="globals/ScanDataModel" pc="268437604" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="44" parent="globals/ScanDataModel" pc="268437609" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="32" lineNum="47" parent="globals/ScanDataModel" pc="268437632" symbol="procScanResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="33" lineNum="59" parent="globals/ScanDataModel" pc="268437649" symbol="previousResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="33" lineNum="60" parent="globals/ScanDataModel" pc="268437651" symbol="previousResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="33" lineNum="61" parent="globals/ScanDataModel" pc="268437668" symbol="previousResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="33" lineNum="62" parent="globals/ScanDataModel" pc="268437687" symbol="previousResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="34" lineNum="78" parent="globals/ScanDataModel" pc="268437707" symbol="getDisplayIndex"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="34" lineNum="79" parent="globals/ScanDataModel" pc="268437709" symbol="getDisplayIndex"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="34" lineNum="80" parent="globals/ScanDataModel" pc="268437735" symbol="getDisplayIndex"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="34" lineNum="83" parent="globals/ScanDataModel" pc="268437744" symbol="getDisplayIndex"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="35" lineNum="68" parent="globals/ScanDataModel" pc="268437759" symbol="getDisplayResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="35" lineNum="69" parent="globals/ScanDataModel" pc="268437761" symbol="getDisplayResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="35" lineNum="70" parent="globals/ScanDataModel" pc="268437787" symbol="getDisplayResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="35" lineNum="73" parent="globals/ScanDataModel" pc="268437792" symbol="getDisplayResult"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="36" lineNum="88" parent="globals/ScanDataModel" pc="268437810" symbol="getResultCount"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="36" lineNum="89" parent="globals/ScanDataModel" pc="268437812" symbol="getResultCount"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="37" lineNum="18" parent="globals/ScanDataModel" pc="268437830" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="37" lineNum="19" parent="globals/ScanDataModel" pc="268437832" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="37" lineNum="21" parent="globals/ScanDataModel" pc="268437846" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDataModel.mc" id="37" lineNum="22" parent="globals/ScanDataModel" pc="268437860" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="38" lineNum="46" parent="globals/ViewController" pc="268437874" symbol="pushDeviceView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="38" lineNum="48" parent="globals/ViewController" pc="268437878" symbol="pushDeviceView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="38" lineNum="49" parent="globals/ViewController" pc="268437899" symbol="pushDeviceView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="39" lineNum="22" parent="globals/ViewController" pc="268437977" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="39" lineNum="24" parent="globals/ViewController" pc="268437981" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="39" lineNum="25" parent="globals/ViewController" pc="268438000" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="39" lineNum="26" parent="globals/ViewController" pc="268438021" symbol="getInitialView"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="40" lineNum="30" parent="globals/ViewController" pc="268438102" symbol="pushScanMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="40" lineNum="32" parent="globals/ViewController" pc="268438106" symbol="pushScanMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="40" lineNum="33" parent="globals/ViewController" pc="268438134" symbol="pushScanMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="40" lineNum="34" parent="globals/ViewController" pc="268438151" symbol="pushScanMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="40" lineNum="35" parent="globals/ViewController" pc="268438173" symbol="pushScanMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="40" lineNum="39" parent="globals/ViewController" pc="268438195" symbol="pushScanMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="40" lineNum="41" parent="globals/ViewController" pc="268438223" symbol="pushScanMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="41" lineNum="16" parent="globals/ViewController" pc="268438249" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ViewController.mc" id="41" lineNum="17" parent="globals/ViewController" pc="268438251" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="42" lineNum="79" parent="globals/DeviceDataModel" pc="268438262" symbol="isConnected"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="42" lineNum="81" parent="globals/DeviceDataModel" pc="268438264" symbol="isConnected"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="42" lineNum="82" parent="globals/DeviceDataModel" pc="268438277" symbol="isConnected"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="42" lineNum="84" parent="globals/DeviceDataModel" pc="268438298" symbol="isConnected"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="43" lineNum="54" parent="globals/DeviceDataModel" pc="268438301" symbol="unpair"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="43" lineNum="56" parent="globals/DeviceDataModel" pc="268438303" symbol="unpair"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="43" lineNum="58" parent="globals/DeviceDataModel" pc="268438316" symbol="unpair"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="43" lineNum="60" parent="globals/DeviceDataModel" pc="268438343" symbol="unpair"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="44" lineNum="21" parent="globals/DeviceDataModel" pc="268438353" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="44" lineNum="22" parent="globals/DeviceDataModel" pc="268438355" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="44" lineNum="23" parent="globals/DeviceDataModel" pc="268438365" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="44" lineNum="25" parent="globals/DeviceDataModel" pc="268438375" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="44" lineNum="27" parent="globals/DeviceDataModel" pc="268438389" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="44" lineNum="28" parent="globals/DeviceDataModel" pc="268438398" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="45" lineNum="33" parent="globals/DeviceDataModel" pc="268438408" symbol="procConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="45" lineNum="34" parent="globals/DeviceDataModel" pc="268438410" symbol="procConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="45" lineNum="36" parent="globals/DeviceDataModel" pc="268438424" symbol="procConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="45" lineNum="39" parent="globals/DeviceDataModel" pc="268438428" symbol="procConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="45" lineNum="40" parent="globals/DeviceDataModel" pc="268438442" symbol="procConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="45" lineNum="43" parent="globals/DeviceDataModel" pc="268438457" symbol="procConnection"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="46" lineNum="65" parent="globals/DeviceDataModel" pc="268438474" symbol="getActiveProfile"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="46" lineNum="67" parent="globals/DeviceDataModel" pc="268438476" symbol="getActiveProfile"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="46" lineNum="68" parent="globals/DeviceDataModel" pc="268438489" symbol="getActiveProfile"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="46" lineNum="70" parent="globals/DeviceDataModel" pc="268438510" symbol="getActiveProfile"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="46" lineNum="74" parent="globals/DeviceDataModel" pc="268438518" symbol="getActiveProfile"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="47" lineNum="47" parent="globals/DeviceDataModel" pc="268438527" symbol="pair"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="47" lineNum="49" parent="globals/DeviceDataModel" pc="268438529" symbol="pair"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="47" lineNum="50" parent="globals/DeviceDataModel" pc="268438550" symbol="pair"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="48" lineNum="88" parent="globals/DeviceDataModel" pc="268438582" symbol="&lt;globals/DeviceDataModel/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="48" lineNum="90" parent="globals/DeviceDataModel" pc="268438584" symbol="&lt;globals/DeviceDataModel/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDataModel.mc" id="48" lineNum="91" parent="globals/DeviceDataModel" pc="268438597" symbol="&lt;globals/DeviceDataModel/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="49" lineNum="10" parent="globals/ScanDelegate" pc="268438634" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="50" lineNum="26" parent="globals/ScanDelegate" pc="268438653" symbol="onMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="50" lineNum="27" parent="globals/ScanDelegate" pc="268438655" symbol="onMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="50" lineNum="28" parent="globals/ScanDelegate" pc="268438673" symbol="onMenu"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="51" lineNum="50" parent="globals/ScanDelegate" pc="268438676" symbol="onPreviousPage"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="51" lineNum="51" parent="globals/ScanDelegate" pc="268438678" symbol="onPreviousPage"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="51" lineNum="52" parent="globals/ScanDelegate" pc="268438696" symbol="onPreviousPage"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="52" lineNum="17" parent="globals/ScanDelegate" pc="268438699" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="52" lineNum="18" parent="globals/ScanDelegate" pc="268438701" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="52" lineNum="20" parent="globals/ScanDelegate" pc="268438719" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="52" lineNum="21" parent="globals/ScanDelegate" pc="268438729" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="53" lineNum="33" parent="globals/ScanDelegate" pc="268438740" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="53" lineNum="34" parent="globals/ScanDelegate" pc="268438744" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="53" lineNum="35" parent="globals/ScanDelegate" pc="268438763" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="53" lineNum="36" parent="globals/ScanDelegate" pc="268438770" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="53" lineNum="38" parent="globals/ScanDelegate" pc="268438793" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="54" lineNum="43" parent="globals/ScanDelegate" pc="268438796" symbol="onNextPage"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="54" lineNum="44" parent="globals/ScanDelegate" pc="268438798" symbol="onNextPage"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/ScanDelegate.mc" id="54" lineNum="45" parent="globals/ScanDelegate" pc="268438816" symbol="onNextPage"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="55" lineNum="11" parent="globals/DeviceView" pc="268438819" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="56" lineNum="16" parent="globals/DeviceView" pc="268438838" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="56" lineNum="17" parent="globals/DeviceView" pc="268438840" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="56" lineNum="19" parent="globals/DeviceView" pc="268438858" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="24" parent="globals/DeviceView" pc="268438869" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="25" parent="globals/DeviceView" pc="268438873" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="26" parent="globals/DeviceView" pc="268438873" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="28" parent="globals/DeviceView" pc="268438893" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="31" parent="globals/DeviceView" pc="268438903" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="35" parent="globals/DeviceView" pc="268438910" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="36" parent="globals/DeviceView" pc="268438932" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="37" parent="globals/DeviceView" pc="268438944" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="39" parent="globals/DeviceView" pc="268438990" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="40" parent="globals/DeviceView" pc="268439009" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="42" parent="globals/DeviceView" pc="268439039" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="44" parent="globals/DeviceView" pc="268439050" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="45" parent="globals/DeviceView" pc="268439072" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="46" parent="globals/DeviceView" pc="268439084" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="51" parent="globals/DeviceView" pc="268439148" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="52" parent="globals/DeviceView" pc="268439161" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="54" parent="globals/DeviceView" pc="268439182" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="55" parent="globals/DeviceView" pc="268439201" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="56" parent="globals/DeviceView" pc="268439220" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="57" parent="globals/DeviceView" pc="268439242" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="59" parent="globals/DeviceView" pc="268439324" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="60" parent="globals/DeviceView" pc="268439346" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="62" parent="globals/DeviceView" pc="268439356" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="64" parent="globals/DeviceView" pc="268439363" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="65" parent="globals/DeviceView" pc="268439385" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceView.mc" id="57" lineNum="66" parent="globals/DeviceView" pc="268439467" symbol="onUpdate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="72" parent="globals/EnvironmentProfileModel" pc="268439559" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="74" parent="globals/EnvironmentProfileModel" pc="268439563" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="76" parent="globals/EnvironmentProfileModel" pc="268439574" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="81" parent="globals/EnvironmentProfileModel" pc="268439603" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="86" parent="globals/EnvironmentProfileModel" pc="268439632" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="77" parent="globals/EnvironmentProfileModel" pc="268439664" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="78" parent="globals/EnvironmentProfileModel" pc="268439694" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="79" parent="globals/EnvironmentProfileModel" pc="268439710" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="83" parent="globals/EnvironmentProfileModel" pc="268439713" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="84" parent="globals/EnvironmentProfileModel" pc="268439749" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="85" parent="globals/EnvironmentProfileModel" pc="268439765" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="88" parent="globals/EnvironmentProfileModel" pc="268439768" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="89" parent="globals/EnvironmentProfileModel" pc="268439792" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="89" parent="globals/EnvironmentProfileModel" pc="268439803" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="90" parent="globals/EnvironmentProfileModel" pc="268439816" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="90" parent="globals/EnvironmentProfileModel" pc="268439827" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="92" parent="globals/EnvironmentProfileModel" pc="268439840" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="58" lineNum="93" parent="globals/EnvironmentProfileModel" pc="268439856" symbol="onCharacteristicChanged"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="59" lineNum="102" parent="globals/EnvironmentProfileModel" pc="268439861" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="59" lineNum="104" parent="globals/EnvironmentProfileModel" pc="268439863" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="59" lineNum="106" parent="globals/EnvironmentProfileModel" pc="268439901" symbol="onDescriptorWrite"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="60" lineNum="130" parent="globals/EnvironmentProfileModel" pc="268439917" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="60" lineNum="132" parent="globals/EnvironmentProfileModel" pc="268439921" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="60" lineNum="134" parent="globals/EnvironmentProfileModel" pc="268439947" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="60" lineNum="137" parent="globals/EnvironmentProfileModel" pc="268439951" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="60" lineNum="138" parent="globals/EnvironmentProfileModel" pc="268439967" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="60" lineNum="139" parent="globals/EnvironmentProfileModel" pc="268439995" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="60" lineNum="141" parent="globals/EnvironmentProfileModel" pc="268440002" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="61" lineNum="117" parent="globals/EnvironmentProfileModel" pc="268440050" symbol="getPO2"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="61" lineNum="119" parent="globals/EnvironmentProfileModel" pc="268440052" symbol="getPO2"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="62" lineNum="121" parent="globals/EnvironmentProfileModel" pc="268440061" symbol="calibrate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="62" lineNum="123" parent="globals/EnvironmentProfileModel" pc="268440063" symbol="calibrate"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="63" lineNum="28" parent="globals/EnvironmentProfileModel" pc="268440087" symbol="startCalibrating"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="63" lineNum="30" parent="globals/EnvironmentProfileModel" pc="268440091" symbol="startCalibrating"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="63" lineNum="31" parent="globals/EnvironmentProfileModel" pc="268440114" symbol="startCalibrating"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="63" lineNum="33" parent="globals/EnvironmentProfileModel" pc="268440147" symbol="startCalibrating"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="63" lineNum="34" parent="globals/EnvironmentProfileModel" pc="268440207" symbol="startCalibrating"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="64" lineNum="146" parent="globals/EnvironmentProfileModel" pc="268440241" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="64" lineNum="148" parent="globals/EnvironmentProfileModel" pc="268440243" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="64" lineNum="150" parent="globals/EnvironmentProfileModel" pc="268440269" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="64" lineNum="151" parent="globals/EnvironmentProfileModel" pc="268440316" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="64" lineNum="155" parent="globals/EnvironmentProfileModel" pc="268440331" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="39" parent="globals/EnvironmentProfileModel" pc="268440346" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="41" parent="globals/EnvironmentProfileModel" pc="268440350" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="42" parent="globals/EnvironmentProfileModel" pc="268440364" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="44" parent="globals/EnvironmentProfileModel" pc="268440378" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="45" parent="globals/EnvironmentProfileModel" pc="268440388" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="47" parent="globals/EnvironmentProfileModel" pc="268440415" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="49" parent="globals/EnvironmentProfileModel" pc="268440429" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="50" parent="globals/EnvironmentProfileModel" pc="268440439" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="51" parent="globals/EnvironmentProfileModel" pc="268440446" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="52" parent="globals/EnvironmentProfileModel" pc="268440467" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="54" parent="globals/EnvironmentProfileModel" pc="268440474" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="57" parent="globals/EnvironmentProfileModel" pc="268440504" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="58" parent="globals/EnvironmentProfileModel" pc="268440525" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="60" parent="globals/EnvironmentProfileModel" pc="268440532" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="65" lineNum="66" parent="globals/EnvironmentProfileModel" pc="268440565" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="66" lineNum="113" parent="globals/EnvironmentProfileModel" pc="268440578" symbol="getRawData"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/EnvironmentProfileModel.mc" id="66" lineNum="115" parent="globals/EnvironmentProfileModel" pc="268440580" symbol="getRawData"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="31" parent="globals/DataModelFactory" pc="268440589" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="32" parent="globals/DataModelFactory" pc="268440593" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="33" parent="globals/DataModelFactory" pc="268440603" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="34" parent="globals/DataModelFactory" pc="268440610" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="35" parent="globals/DataModelFactory" pc="268440624" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="39" parent="globals/DataModelFactory" pc="268440642" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="40" parent="globals/DataModelFactory" pc="268440678" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="67" lineNum="42" parent="globals/DataModelFactory" pc="268440697" symbol="getScanDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="68" lineNum="24" parent="globals/DataModelFactory" pc="268440700" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="68" lineNum="25" parent="globals/DataModelFactory" pc="268440702" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="68" lineNum="26" parent="globals/DataModelFactory" pc="268440712" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="48" parent="globals/DataModelFactory" pc="268440723" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="49" parent="globals/DataModelFactory" pc="268440727" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="50" parent="globals/DataModelFactory" pc="268440737" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="51" parent="globals/DataModelFactory" pc="268440744" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="52" parent="globals/DataModelFactory" pc="268440758" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="56" parent="globals/DataModelFactory" pc="268440776" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="57" parent="globals/DataModelFactory" pc="268440816" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="69" lineNum="59" parent="globals/DataModelFactory" pc="268440835" symbol="getDeviceDataModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="65" parent="globals/DataModelFactory" pc="268440838" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="66" parent="globals/DataModelFactory" pc="268440842" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="67" parent="globals/DataModelFactory" pc="268440852" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="68" parent="globals/DataModelFactory" pc="268440859" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="69" parent="globals/DataModelFactory" pc="268440873" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="73" parent="globals/DataModelFactory" pc="268440891" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="74" parent="globals/DataModelFactory" pc="268440937" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DataModelFactory.mc" id="70" lineNum="76" parent="globals/DataModelFactory" pc="268440956" symbol="getEnvironmentModel"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="71" lineNum="11" parent="globals/DeviceDelegate" pc="268440959" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="72" lineNum="25" parent="globals/DeviceDelegate" pc="268440978" symbol="onBack"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="72" lineNum="27" parent="globals/DeviceDelegate" pc="268440980" symbol="onBack"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="72" lineNum="28" parent="globals/DeviceDelegate" pc="268440998" symbol="onBack"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="72" lineNum="29" parent="globals/DeviceDelegate" pc="268441026" symbol="onBack"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="73" lineNum="16" parent="globals/DeviceDelegate" pc="268441029" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="73" lineNum="17" parent="globals/DeviceDelegate" pc="268441031" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="73" lineNum="19" parent="globals/DeviceDelegate" pc="268441049" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="73" lineNum="20" parent="globals/DeviceDelegate" pc="268441059" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="74" lineNum="31" parent="globals/DeviceDelegate" pc="268441078" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="74" lineNum="34" parent="globals/DeviceDelegate" pc="268441082" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="74" lineNum="35" parent="globals/DeviceDelegate" pc="268441105" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="74" lineNum="36" parent="globals/DeviceDelegate" pc="268441124" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="74" lineNum="38" parent="globals/DeviceDelegate" pc="268441154" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/DeviceDelegate.mc" id="74" lineNum="41" parent="globals/DeviceDelegate" pc="268441169" symbol="onSelect"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" id="75" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268441172" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" id="76" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268441191" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" id="76" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268441193" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" id="76" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268441211" symbol="initialize"/>
+        <entry filename="/Users/changer65535/Documents/GARMIN APPS/nitrox01/source/gen/006-B3258-00/source/Rez.mcgen" id="76" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268441267" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="56" method="true" symbol="pushDeviceView"/>
+        <entry field="true" id="73" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;_rawData&gt;"/>
+        <entry field="true" id="70" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;_pO2&gt;"/>
+        <entry id="44" method="true" symbol="notifyDescriptorWrite"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="47" symbol="&lt;globals/ScanDataModel/&lt;&gt;_displayResult&gt;"/>
+        <entry field="true" id="74" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;_service&gt;"/>
+        <entry id="14" object="true" symbol="MainMenuDelegate"/>
+        <entry field="true" id="36" symbol="&lt;globals/ThingyDelegate/&lt;&gt;_onConnection&gt;"/>
+        <entry id="63" method="true" symbol="pair"/>
+        <entry id="21" object="true" symbol="ViewController"/>
+        <entry id="79" method="true" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="28" symbol="&lt;globals/NordicThingyApp/&lt;&gt;_bleDelegate&gt;"/>
+        <entry id="10" object="true" symbol="DeviceDataModel"/>
+        <entry id="15" object="true" symbol="NordicThingyApp"/>
+        <entry id="8391256" method="true" symbol="onScanResults"/>
+        <entry id="41" method="true" symbol="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;"/>
+        <entry id="76" method="true" symbol="calibrate"/>
+        <entry field="true" id="71" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;_pendingNotifies&gt;"/>
+        <entry id="64" method="true" symbol="procConnection"/>
+        <entry id="78" method="true" symbol="getPO2"/>
+        <entry id="88" method="true" symbol="getScanDataModel"/>
+        <entry field="true" id="97" symbol="AppName"/>
+        <entry field="true" id="95" symbol="TempInd"/>
+        <entry id="8391272" method="true" symbol="getRawData"/>
+        <entry id="8391262" method="true" symbol="onDescriptorWrite"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="46" symbol="_dataModel"/>
+        <entry id="13" object="true" symbol="EnvironmentProfileModel"/>
+        <entry field="true" id="23" symbol="NITROX_SERVICE"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry field="true" id="91" symbol="HumidityInd"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8391340" symbol="descriptors"/>
+        <entry id="11" object="true" symbol="DeviceDelegate"/>
+        <entry field="true" id="69" symbol="&lt;globals/DeviceView/&lt;&gt;_dataModel&gt;"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8391263" method="true" symbol="onCharacteristicChanged"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8391258" method="true" symbol="onConnectedStateChanged"/>
+        <entry id="16" object="true" symbol="ProfileManager"/>
+        <entry id="103" symbol="item_2"/>
+        <entry id="102" symbol="item_1"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="34" module="true" symbol="Menus"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="62" method="true" symbol="getActiveProfile"/>
+        <entry field="true" id="29" symbol="&lt;globals/NordicThingyApp/&lt;&gt;_modelFactory&gt;"/>
+        <entry field="true" id="84" symbol="&lt;globals/DataModelFactory/&lt;&gt;_profileManager&gt;"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="12" object="true" symbol="DeviceView"/>
+        <entry field="true" id="61" symbol="&lt;globals/DeviceDataModel/&lt;&gt;_scanResult&gt;"/>
+        <entry id="87" method="true" symbol="getEnvironmentModel"/>
+        <entry id="53" method="true" symbol="previousResult"/>
+        <entry id="66" method="true" symbol="unpair"/>
+        <entry id="20" object="true" symbol="ThingyDelegate"/>
+        <entry id="52" method="true" symbol="nextResult"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="83" symbol="&lt;globals/DataModelFactory/&lt;&gt;_envModel&gt;"/>
+        <entry id="75" method="true" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry field="true" id="92" symbol="Launcher"/>
+        <entry field="true" id="31" symbol="&lt;globals/NordicThingyApp/&lt;&gt;_viewController&gt;"/>
+        <entry field="true" id="89" symbol="&lt;globals/DeviceDelegate/&lt;&gt;_deviceDataModel&gt;"/>
+        <entry field="true" id="35" symbol="&lt;globals/ThingyDelegate/&lt;&gt;_onCharChanged&gt;"/>
+        <entry field="true" id="94" symbol="PressureInd"/>
+        <entry id="8391335" symbol="writeType"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="100" symbol="search"/>
+        <entry id="96" object="true" symbol="MainMenu"/>
+        <entry id="86" method="true" symbol="getDeviceDataModel"/>
+        <entry id="8388699" method="true" symbol="stop"/>
+        <entry id="51" method="true" symbol="getResultCount"/>
+        <entry id="8391244" method="true" symbol="isConnected"/>
+        <entry field="true" id="60" symbol="&lt;globals/DeviceDataModel/&lt;&gt;_environmentProfile&gt;"/>
+        <entry id="42" method="true" symbol="notifyCharacteristicChanged"/>
+        <entry id="27" method="true" symbol="registerProfiles"/>
+        <entry field="true" id="81" symbol="&lt;globals/DataModelFactory/&lt;&gt;_delegate&gt;"/>
+        <entry field="true" id="22" symbol="CALIBRATE_CHARACTERISTIC"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry field="true" id="82" symbol="&lt;globals/DataModelFactory/&lt;&gt;_deviceDataModel&gt;"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="24" symbol="PO2_CHARACTERISTIC"/>
+        <entry field="true" id="55" symbol="&lt;globals/ViewController/&lt;&gt;_modelFactory&gt;"/>
+        <entry id="40" method="true" symbol="&lt;globals/ThingyDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="45" method="true" symbol="notifyScanResult"/>
+        <entry field="true" id="67" symbol="&lt;globals/ScanDelegate/&lt;&gt;_scanDataModel&gt;"/>
+        <entry id="49" method="true" symbol="getDisplayIndex"/>
+        <entry field="true" id="26" symbol="&lt;globals/ProfileManager/&lt;&gt;_nitroxProfileDef&gt;"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="37" symbol="&lt;globals/ThingyDelegate/&lt;&gt;_onDescriptorWrite&gt;"/>
+        <entry field="true" id="93" symbol="LeafInd"/>
+        <entry id="8391334" symbol="uuid"/>
+        <entry id="57" method="true" symbol="pushScanMenu"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8391193" module="true" symbol="BluetoothLowEnergy"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="30" symbol="&lt;globals/NordicThingyApp/&lt;&gt;_profileManager&gt;"/>
+        <entry field="true" id="48" symbol="&lt;globals/ScanDataModel/&lt;&gt;_scanResults&gt;"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="80" method="true" symbol="startCalibrating"/>
+        <entry id="9" object="true" symbol="DataModelFactory"/>
+        <entry id="8391341" symbol="characteristics"/>
+        <entry id="19" object="true" symbol="ScanView"/>
+        <entry id="17" object="true" symbol="ScanDataModel"/>
+        <entry field="true" id="90" symbol="Co2Ind"/>
+        <entry field="true" id="72" symbol="&lt;globals/EnvironmentProfileModel/&lt;&gt;_profileManager&gt;"/>
+        <entry id="50" method="true" symbol="getDisplayResult"/>
+        <entry id="33" module="true" symbol="Layouts"/>
+        <entry field="true" id="39" symbol="&lt;globals/ThingyDelegate/&lt;&gt;_profileManager&gt;"/>
+        <entry field="true" id="68" symbol="&lt;globals/ScanDelegate/&lt;&gt;_viewController&gt;"/>
+        <entry id="65" method="true" symbol="&lt;globals/DeviceDataModel/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry field="true" id="32" symbol="&lt;globals/ScanView/&lt;&gt;_scanDataModel&gt;"/>
+        <entry field="true" id="25" symbol="RAWDATA_CHARACTERISTIC"/>
+        <entry field="true" id="77" symbol="calibrating"/>
+        <entry id="18" object="true" symbol="ScanDelegate"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="59" symbol="&lt;globals/DeviceDataModel/&lt;&gt;_device&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="85" symbol="&lt;globals/DataModelFactory/&lt;&gt;_scanDataModel&gt;"/>
+        <entry field="true" id="58" symbol="&lt;globals/DeviceDataModel/&lt;&gt;_dataModelFactory&gt;"/>
+        <entry id="43" method="true" symbol="notifyConnection"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="54" method="true" symbol="procScanResult"/>
+        <entry field="true" id="38" symbol="&lt;globals/ThingyDelegate/&lt;&gt;_onScanResult&gt;"/>
+        <entry field="true" id="99" symbol="menu_label_2"/>
+        <entry field="true" id="98" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436092" name="state" stackId="1" startPc="268435864"/>
+        <entry arg="true" endPc="268436190" name="state" stackId="1" startPc="268436152"/>
+        <entry arg="true" endPc="268436243" name="scanDataModel" stackId="1" startPc="268436213"/>
+        <entry arg="true" endPc="268436507" name="dc" stackId="1" startPc="268436244"/>
+        <entry endPc="268436506" name="displayResult" stackId="2" startPc="268436248"/>
+        <entry endPc="268436506" name="str" stackId="3" startPc="268436248"/>
+        <entry endPc="268436506" name="strDimen" stackId="4" startPc="268436248"/>
+        <entry endPc="268436506" name="textOffset" stackId="5" startPc="268436248"/>
+        <entry arg="true" endPc="268436617" name="char" stackId="1" startPc="268436551"/>
+        <entry arg="true" endPc="268436617" name="value" stackId="2" startPc="268436551"/>
+        <entry endPc="268436616" name="onCharChanged" stackId="3" startPc="268436555"/>
+        <entry arg="true" endPc="268436639" name="model" stackId="1" startPc="268436618"/>
+        <entry arg="true" endPc="268436661" name="model" stackId="1" startPc="268436640"/>
+        <entry arg="true" endPc="268436683" name="model" stackId="1" startPc="268436662"/>
+        <entry arg="true" endPc="268436750" name="descriptor" stackId="1" startPc="268436684"/>
+        <entry arg="true" endPc="268436750" name="status" stackId="2" startPc="268436684"/>
+        <entry endPc="268436749" name="onDescriptorWrite" stackId="3" startPc="268436688"/>
+        <entry arg="true" endPc="268436815" name="device" stackId="1" startPc="268436751"/>
+        <entry arg="true" endPc="268436815" name="state" stackId="2" startPc="268436751"/>
+        <entry endPc="268436814" name="onConnection" stackId="3" startPc="268436755"/>
+        <entry arg="true" endPc="268436932" name="iter" stackId="1" startPc="268436816"/>
+        <entry arg="true" endPc="268436932" name="obj" stackId="2" startPc="268436816"/>
+        <entry endPc="268436929" name="uuid" stackId="3" startPc="268436840"/>
+        <entry arg="true" endPc="268436954" name="model" stackId="1" startPc="268436933"/>
+        <entry arg="true" endPc="268437019" name="scanResult" stackId="1" startPc="268436955"/>
+        <entry endPc="268437018" name="onScanResult" stackId="2" startPc="268436959"/>
+        <entry arg="true" endPc="268437050" name="profileManager" stackId="1" startPc="268437020"/>
+        <entry arg="true" endPc="268437315" name="scanResults" stackId="1" startPc="268437051"/>
+        <entry endPc="268437314" name="result" stackId="2" startPc="268437075"/>
+        <entry arg="true" endPc="268437407" name="item" stackId="1" startPc="268437335"/>
+        <entry arg="true" endPc="268437648" name="scanResult" stackId="1" startPc="268437505"/>
+        <entry endPc="268437647" name="newDevice" stackId="2" startPc="268437509"/>
+        <entry endPc="268437603" name="i" stackId="3" startPc="268437543"/>
+        <entry arg="true" endPc="268437873" name="bleDelegate" stackId="1" startPc="268437830"/>
+        <entry arg="true" endPc="268437976" name="scanResult" stackId="1" startPc="268437874"/>
+        <entry endPc="268437975" name="deviceDataModel" stackId="2" startPc="268437878"/>
+        <entry endPc="268438101" name="scanDataModel" stackId="1" startPc="268437981"/>
+        <entry endPc="268438247" name="menu" stackId="1" startPc="268438106"/>
+        <entry endPc="268438247" name="mmd" stackId="2" startPc="268438106"/>
+        <entry arg="true" endPc="268438261" name="modelFactory" stackId="1" startPc="268438249"/>
+        <entry arg="true" endPc="268438407" name="bleDelegate" stackId="1" startPc="268438353"/>
+        <entry arg="true" endPc="268438407" name="dataModelFactory" stackId="2" startPc="268438353"/>
+        <entry arg="true" endPc="268438407" name="scanResult" stackId="3" startPc="268438353"/>
+        <entry arg="true" endPc="268438473" name="device" stackId="1" startPc="268438408"/>
+        <entry arg="true" endPc="268438739" name="scanDataModel" stackId="1" startPc="268438699"/>
+        <entry arg="true" endPc="268438739" name="viewController" stackId="2" startPc="268438699"/>
+        <entry endPc="268438795" name="displayResult" stackId="1" startPc="268438744"/>
+        <entry arg="true" endPc="268438868" name="dataModel" stackId="1" startPc="268438838"/>
+        <entry arg="true" endPc="268439558" name="dc" stackId="1" startPc="268438869"/>
+        <entry endPc="268439557" name="statusString" stackId="2" startPc="268438873"/>
+        <entry endPc="268439557" name="profile" stackId="3" startPc="268438873"/>
+        <entry endPc="268439554" name="pO2" stackId="4" startPc="268439148"/>
+        <entry endPc="268439551" name="midX" stackId="5" startPc="268439182"/>
+        <entry endPc="268439551" name="midY" stackId="6" startPc="268439182"/>
+        <entry endPc="268439551" name="modFeet" stackId="7" startPc="268439182"/>
+        <entry endPc="268439551" name="modMeters" stackId="8" startPc="268439182"/>
+        <entry arg="true" endPc="268439860" name="char" stackId="1" startPc="268439559"/>
+        <entry arg="true" endPc="268439860" name="value" stackId="2" startPc="268439559"/>
+        <entry endPc="268439858" name="c" stackId="3" startPc="268439574"/>
+        <entry arg="true" endPc="268439916" name="descriptor" stackId="1" startPc="268439861"/>
+        <entry arg="true" endPc="268439916" name="status" stackId="2" startPc="268439861"/>
+        <entry endPc="268440048" name="char" stackId="1" startPc="268439921"/>
+        <entry endPc="268440048" name="cccd" stackId="2" startPc="268439921"/>
+        <entry endPc="268440239" name="cCalibrate" stackId="1" startPc="268440091"/>
+        <entry endPc="268440239" name="bArray" stackId="2" startPc="268440091"/>
+        <entry arg="true" endPc="268440577" name="delegate" stackId="1" startPc="268440346"/>
+        <entry arg="true" endPc="268440577" name="profileManager" stackId="2" startPc="268440346"/>
+        <entry arg="true" endPc="268440577" name="device" stackId="3" startPc="268440346"/>
+        <entry endPc="268440576" name="service" stackId="4" startPc="268440350"/>
+        <entry endPc="268440561" name="characteristic" stackId="5" startPc="268440446"/>
+        <entry endPc="268440699" name="scanDataModel" stackId="1" startPc="268440593"/>
+        <entry endPc="268440699" name="dataModel" stackId="2" startPc="268440593"/>
+        <entry arg="true" endPc="268440722" name="delegate" stackId="1" startPc="268440700"/>
+        <entry arg="true" endPc="268440722" name="profileManager" stackId="2" startPc="268440700"/>
+        <entry arg="true" endPc="268440837" name="scanResult" stackId="1" startPc="268440723"/>
+        <entry endPc="268440837" name="deviceDataModel" stackId="2" startPc="268440727"/>
+        <entry endPc="268440837" name="dataModel" stackId="3" startPc="268440727"/>
+        <entry arg="true" endPc="268440958" name="device" stackId="1" startPc="268440838"/>
+        <entry endPc="268440958" name="envModel" stackId="2" startPc="268440842"/>
+        <entry endPc="268440958" name="dataModel" stackId="3" startPc="268440842"/>
+        <entry arg="true" endPc="268441077" name="deviceDataModel" stackId="1" startPc="268441029"/>
+        <entry endPc="268441171" name="profile" stackId="1" startPc="268441082"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Co2Ind"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HumidityInd"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="TempInd"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LeafInd"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Launcher"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="PressureInd"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/ProfileManager" offset="238" parentId="globals" symbolId="ProfileManager" type="class"/>
+        <dataEntry label="globals/NordicThingyApp" offset="333" parentId="globals" symbolId="NordicThingyApp" type="class"/>
+        <dataEntry label="globals/ScanView" offset="436" parentId="globals" symbolId="ScanView" type="class"/>
+        <dataEntry label="globals/Rez" offset="523" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/ThingyDelegate" offset="602" parentId="globals" symbolId="ThingyDelegate" type="class"/>
+        <dataEntry label="globals/MainMenuDelegate" offset="769" parentId="globals" symbolId="MainMenuDelegate" type="class"/>
+        <dataEntry label="globals/ScanDataModel" offset="832" parentId="globals" symbolId="ScanDataModel" type="class"/>
+        <dataEntry label="globals/ViewController" offset="943" parentId="globals" symbolId="ViewController" type="class"/>
+        <dataEntry label="globals/DeviceDataModel" offset="1022" parentId="globals" symbolId="DeviceDataModel" type="class"/>
+        <dataEntry label="globals/ScanDelegate" offset="1149" parentId="globals" symbolId="ScanDelegate" type="class"/>
+        <dataEntry label="globals/DeviceView" offset="1244" parentId="globals" symbolId="DeviceView" type="class"/>
+        <dataEntry label="globals/EnvironmentProfileModel" offset="1307" parentId="globals" symbolId="EnvironmentProfileModel" type="class"/>
+        <dataEntry label="globals/DataModelFactory" offset="1466" parentId="globals" symbolId="DataModelFactory" type="class"/>
+        <dataEntry label="globals/DeviceDelegate" offset="1577" parentId="globals" symbolId="DeviceDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1648" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1727" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1758" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1797" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1828" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1883" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1914" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435817" name="&lt;init&gt;" parent="ProfileManager" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435844" name="registerProfiles" parent="ProfileManager" startPc="268435818">
+            <documentation>
+                <![CDATA[<div class="description"> Register the bluetooth profile<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ProfileManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435863" name="&lt;init&gt;" parent="NordicThingyApp" startPc="268435845">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436092" name="onStart" parent="NordicThingyApp" startPc="268435864">
+            <param id="state"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle app startup<br/> <div class="param"> state Startup arguments</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436130" name="getInitialView" parent="NordicThingyApp" startPc="268436093">
+            <documentation>
+                <![CDATA[<div class="description"> Return the initial views for the app<br/> <div class="returns">Returns  Array Pair [View, InputDelegate]</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436151" name="initialize" parent="NordicThingyApp" startPc="268436131">
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436190" name="onStop" parent="NordicThingyApp" startPc="268436152">
+            <param id="state"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle app shutdown<br/> <div class="param"> state Shutdown arguments</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436209" name="&lt;init&gt;" parent="ScanView" startPc="268436191">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="ScanView">
+            <documentation>
+                <![CDATA[<div class="description"> Called when this View is brought to the foreground. Restore<br/> the state of this View and prepare it to be shown. This includes<br/> loading resources into memory.<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436212" name="onLayout" parent="ScanView" startPc="268436210">
+            <param id="dc"/>
+            <documentation>
+                <![CDATA[<div class="description"> Load your resources here<br/> <div class="param"> dc Device context</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436243" name="initialize" parent="ScanView" startPc="268436213">
+            <param id="scanDataModel"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> scanDataModel The model containing the scan results</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="ScanView">
+            <documentation>
+                <![CDATA[<div class="description"> Called when this View is removed from the screen. Save the<br/> state of this View here. This includes freeing resources from<br/> memory.<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436507" name="onUpdate" parent="ScanView" startPc="268436244">
+            <param id="dc"/>
+            <documentation>
+                <![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device context</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436531" name="&lt;init&gt;" parent="Rez" startPc="268436508">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436550" name="&lt;init&gt;" parent="ThingyDelegate" startPc="268436532">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436617" name="onCharacteristicChanged" parent="ThingyDelegate" startPc="268436551">
+            <param id="char"/>
+            <param id="value"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle a characteristic being changed<br/> <div class="param"> char The characteristic that changed</div><br/> <div class="param"> value The updated value of the characteristic</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436639" name="notifyCharacteristicChanged" parent="ThingyDelegate" startPc="268436618">
+            <param id="model"/>
+            <documentation>
+                <![CDATA[<div class="description"> Store a new model to handle characteristic changes<br/> <div class="param"> model The model for characteristics</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436661" name="notifyConnection" parent="ThingyDelegate" startPc="268436640">
+            <param id="model"/>
+            <documentation>
+                <![CDATA[<div class="description"> Store a new model to manage device data connections<br/> <div class="param"> model The model for device data</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436683" name="notifyScanResult" parent="ThingyDelegate" startPc="268436662">
+            <param id="model"/>
+            <documentation>
+                <![CDATA[<div class="description"> Store a new model to manage scan results<br/> <div class="param"> model The model containing scan results</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436750" name="onDescriptorWrite" parent="ThingyDelegate" startPc="268436684">
+            <param id="descriptor"/>
+            <param id="status"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle the completion of a write operation on a descriptor<br/> <div class="param"> descriptor The descriptor that was written</div><br/> <div class="param"> status The BluetoothLowEnergy status indicating the result of the operation</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436815" name="onConnectedStateChanged" parent="ThingyDelegate" startPc="268436751">
+            <param id="device"/>
+            <param id="state"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle pairing and connecting to a device<br/> <div class="param"> device The device state that was changed</div><br/> <div class="param"> state The state of the connection</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436932" name="&lt;globals/ThingyDelegate/&lt;&gt;contains&gt;" parent="ThingyDelegate" startPc="268436816">
+            <param id="iter"/>
+            <param id="obj"/>
+            <documentation>
+                <![CDATA[<div class="description"> Get whether the iterator contains a specific uuid<br/> <div class="param"> iter Iterator of uuid objects</div><br/> <div class="param"> obj Uuid to search for</div><br/> <div class="returns">Returns  true if object found, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436954" name="notifyDescriptorWrite" parent="ThingyDelegate" startPc="268436933">
+            <param id="model"/>
+            <documentation>
+                <![CDATA[<div class="description"> Store a new model to handle descriptor writes<br/> <div class="param"> model The model for descriptors</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437019" name="&lt;globals/ThingyDelegate/&lt;&gt;broadcastScanResult&gt;" parent="ThingyDelegate" startPc="268436955">
+            <param id="scanResult"/>
+            <documentation>
+                <![CDATA[<div class="description"> Broadcast a new scan result<br/> <div class="param"> scanResult The new scan result</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437050" name="initialize" parent="ThingyDelegate" startPc="268437020">
+            <param id="profileManager"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> profileManager The profile manager</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437315" name="onScanResults" parent="ThingyDelegate" startPc="268437051">
+            <param id="scanResults"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle new scan results being received<br/> <div class="param"> scanResults An iterator of new scan results</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437334" name="&lt;init&gt;" parent="MainMenuDelegate" startPc="268437316">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437407" name="onMenuItem" parent="MainMenuDelegate" startPc="268437335">
+            <param id="item"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle a menu item being chosen<br/> <div class="param"> item The identifier of the chosen item</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437428" name="initialize" parent="MainMenuDelegate" startPc="268437408">
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ScanDataModel">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437504" name="nextResult" parent="ScanDataModel" startPc="268437429">
+            <documentation>
+                <![CDATA[<div class="description"> Update display to next result<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437648" name="procScanResult" parent="ScanDataModel" startPc="268437505">
+            <param id="scanResult"/>
+            <documentation>
+                <![CDATA[<div class="description"> Process a new scan result<br/> <div class="param"> scanResult The new scan result</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437706" name="previousResult" parent="ScanDataModel" startPc="268437649">
+            <documentation>
+                <![CDATA[<div class="description"> Update display to previous result<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437758" name="getDisplayIndex" parent="ScanDataModel" startPc="268437707">
+            <documentation>
+                <![CDATA[<div class="description"> Get the current display index<br/> <div class="returns">Returns  The display index</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437809" name="getDisplayResult" parent="ScanDataModel" startPc="268437759">
+            <documentation>
+                <![CDATA[<div class="description"> Get the current scan result<br/> <div class="returns">Returns  The current scan result</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437829" name="getResultCount" parent="ScanDataModel" startPc="268437810">
+            <documentation>
+                <![CDATA[<div class="description"> Get the number of scan results<br/> <div class="returns">Returns  The number of scan results</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437873" name="initialize" parent="ScanDataModel" startPc="268437830">
+            <param id="bleDelegate"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> bleDelegate The BLE delegate for this model</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="ViewController">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437976" name="pushDeviceView" parent="ViewController" startPc="268437874">
+            <param id="scanResult"/>
+            <documentation>
+                <![CDATA[<div class="description"> Push the device view<br/> <div class="param"> scanResult The scan result for the device view to push</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438101" name="getInitialView" parent="ViewController" startPc="268437977">
+            <documentation>
+                <![CDATA[<div class="description"> Return the initial views for the app<br/> <div class="returns">Returns  Array Pair [View, InputDelegate]</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438248" name="pushScanMenu" parent="ViewController" startPc="268438102">
+            <documentation>
+                <![CDATA[<div class="description"> Push the scan menu view<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438261" name="initialize" parent="ViewController" startPc="268438249">
+            <param id="modelFactory"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> modelFactory Factory to create models</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="DeviceDataModel">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438300" name="isConnected" parent="DeviceDataModel" startPc="268438262">
+            <documentation>
+                <![CDATA[<div class="description"> Get whether a device is connected<br/> <div class="returns">Returns  true if connected, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438352" name="unpair" parent="DeviceDataModel" startPc="268438301">
+            <documentation>
+                <![CDATA[<div class="description"> Unpair the current device<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438407" name="initialize" parent="DeviceDataModel" startPc="268438353">
+            <param id="bleDelegate"/>
+            <param id="dataModelFactory"/>
+            <param id="scanResult"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> bleDelegate The BLE delegate for the model</div><br/> <div class="param"> dataModelFactory The factory to create models</div><br/> <div class="param"> scanResult The device scan result</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438473" name="procConnection" parent="DeviceDataModel" startPc="268438408">
+            <param id="device"/>
+            <documentation>
+                <![CDATA[<div class="description"> Process a new device connection<br/> <div class="param"> device The device that was connected</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438526" name="getActiveProfile" parent="DeviceDataModel" startPc="268438474">
+            <documentation>
+                <![CDATA[<div class="description"> Get the active profile<br/> <div class="returns">Returns  The current profile, or null if no device connected</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438581" name="pair" parent="DeviceDataModel" startPc="268438527">
+            <documentation>
+                <![CDATA[<div class="description"> Pair the device associated with the current scan result<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438633" name="&lt;globals/DeviceDataModel/&lt;&gt;procDeviceConnected&gt;" parent="DeviceDataModel" startPc="268438582">
+            <documentation>
+                <![CDATA[<div class="description"> Update the profile after a is device connected<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438652" name="&lt;init&gt;" parent="ScanDelegate" startPc="268438634">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438675" name="onMenu" parent="ScanDelegate" startPc="268438653">
+            <documentation>
+                <![CDATA[<div class="description"> Handle menu button press<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438698" name="onPreviousPage" parent="ScanDelegate" startPc="268438676">
+            <documentation>
+                <![CDATA[<div class="description"> Handle previous page behavior<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438739" name="initialize" parent="ScanDelegate" startPc="268438699">
+            <param id="scanDataModel"/>
+            <param id="viewController"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> scanDataModel The model containing the scan results</div><br/> <div class="param"> viewController Object that controls pushing new views</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438795" name="onSelect" parent="ScanDelegate" startPc="268438740">
+            <documentation>
+                <![CDATA[<div class="description"> Handle the select action<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438818" name="onNextPage" parent="ScanDelegate" startPc="268438796">
+            <documentation>
+                <![CDATA[<div class="description"> Handle next page behavior<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438837" name="&lt;init&gt;" parent="DeviceView" startPc="268438819">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438868" name="initialize" parent="DeviceView" startPc="268438838">
+            <param id="dataModel"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> dataModel The data to show</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439558" name="onUpdate" parent="DeviceView" startPc="268438869">
+            <param id="dc"/>
+            <documentation>
+                <![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device Context</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="EnvironmentProfileModel">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439860" name="onCharacteristicChanged" parent="EnvironmentProfileModel" startPc="268439559">
+            <param id="char"/>
+            <param id="value"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle a characteristic being changed<br/> <div class="param"> char The characteristic that changed</div><br/> <div class="param"> value The updated value of the characteristic</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439916" name="onDescriptorWrite" parent="EnvironmentProfileModel" startPc="268439861">
+            <param id="descriptor"/>
+            <param id="status"/>
+            <documentation>
+                <![CDATA[<div class="description"> Handle the completion of a write operation on a descriptor<br/> <div class="param"> descriptor The descriptor that was written</div><br/> <div class="param"> status The BluetoothLowEnergy status indicating the result of the operation</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268440049" name="&lt;globals/EnvironmentProfileModel/&lt;&gt;activateNextNotification&gt;" parent="EnvironmentProfileModel" startPc="268439917">
+            <documentation>
+                <![CDATA[<div class="description"> Write the next notification to the descriptor<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440060" name="getPO2" parent="EnvironmentProfileModel" startPc="268440050">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440086" name="calibrate" parent="EnvironmentProfileModel" startPc="268440061">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440240" name="startCalibrating" parent="EnvironmentProfileModel" startPc="268440087">
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> delegate The BLE delegate for the model</div><br/> <div class="param"> profileManager The profile manager for this model</div><br/> <div class="param"> device The current device</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268440345" name="&lt;globals/EnvironmentProfileModel/&lt;&gt;processCccdWrite&gt;" parent="EnvironmentProfileModel" startPc="268440241">
+            <documentation>
+                <![CDATA[<div class="description"> Process a CCCD write operation<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440577" name="initialize" parent="EnvironmentProfileModel" startPc="268440346">
+            <param id="delegate"/>
+            <param id="profileManager"/>
+            <param id="device"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440588" name="getRawData" parent="EnvironmentProfileModel" startPc="268440578">
+            <documentation>
+                <![CDATA[<div class="description"> Get the temperature<br/> <div class="returns">Returns  The temperature</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="DataModelFactory">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440699" name="getScanDataModel" parent="DataModelFactory" startPc="268440589">
+            <documentation>
+                <![CDATA[<div class="description"> Get a scan data model instance<br/> <div class="returns">Returns  The current scan data model or a new one</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440722" name="initialize" parent="DataModelFactory" startPc="268440700">
+            <param id="delegate"/>
+            <param id="profileManager"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> delegate The BLE delegate to use for the models</div><br/> <div class="param"> profileManager The profile manager to use for a profile model</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440837" name="getDeviceDataModel" parent="DataModelFactory" startPc="268440723">
+            <param id="scanResult"/>
+            <documentation>
+                <![CDATA[<div class="description"> Get a device data model instance<br/> <div class="param"> scanResult The scan result to use for a new model</div><br/> <div class="returns">Returns  The current device data model or a new one</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440958" name="getEnvironmentModel" parent="DataModelFactory" startPc="268440838">
+            <param id="device"/>
+            <documentation>
+                <![CDATA[<div class="description"> Get a environment profile model instance<br/> <div class="param"> device The device to use for a new model</div><br/> <div class="returns">Returns  The current environment profile model or a new one</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440977" name="&lt;init&gt;" parent="DeviceDelegate" startPc="268440959">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441028" name="onBack" parent="DeviceDelegate" startPc="268440978">
+            <documentation>
+                <![CDATA[<div class="description"> Handle the back behavior<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441077" name="initialize" parent="DeviceDelegate" startPc="268441029">
+            <param id="deviceDataModel"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> deviceDataModel The device data model</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441171" name="onSelect" parent="DeviceDelegate" startPc="268441078">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441190" name="&lt;init&gt;" parent="MainMenu" startPc="268441172">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441323" name="initialize" parent="MainMenu" startPc="268441191">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

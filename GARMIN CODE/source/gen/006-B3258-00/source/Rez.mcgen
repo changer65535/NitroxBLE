@@ -1,0 +1,41 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var Co2Ind as Symbol;
+        (:initialized) var HumidityInd as Symbol;
+        (:initialized) var LeafInd as Symbol;
+        (:initialized) var PressureInd as Symbol;
+        (:initialized) var TempInd as Symbol;
+        (:initialized) var Launcher as Symbol;
+    } // Drawables
+
+    module Fonts {
+    } // Fonts
+
+    module JsonData {
+    } // JsonData
+
+    module Layouts {
+    } // Layouts
+
+    module Menus {
+        class MainMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_1) as String), :item_1);
+                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_2) as String), :item_2);
+            }
+        }
+    } // Menus
+
+    module Strings {
+        (:initialized) var menu_label_1 as Symbol;
+        (:initialized) var menu_label_2 as Symbol;
+        (:initialized) var AppName as Symbol;
+    } // Strings
+} // Rez
